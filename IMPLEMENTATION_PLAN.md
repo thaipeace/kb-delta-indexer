@@ -221,9 +221,9 @@ Kết nối toàn bộ pipeline vào `main.py` và thực hiện sanity test câ
      5. Commit `sync_state.json` cập nhật trở lại repo nếu có delta mới.
 
 ### Tiêu chí nghiệm thu Phase 5:
-- [ ] Push code lên GitHub.
-- [ ] Action chạy thành công: Docker build pass, Docker run exit 0, in log đầy đủ.
-- [ ] Lấy được link URL của workflow run công khai.
+- [x] Push code lên GitHub: `git@github-thaipeace:thaipeace/kb-delta-indexer.git`
+- [x] Action chạy thành công: Docker build pass, Docker run exit 0, in log đầy đủ (Run ID: `36980781958`).
+- [x] Lấy được link URL của workflow run công khai: [GitHub Actions Run #36980781958](https://github.com/thaipeace/kb-delta-indexer/actions/runs/36980781958)
 
 ---
 
