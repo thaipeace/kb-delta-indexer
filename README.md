@@ -13,7 +13,7 @@ An automated, idempotent RAG ingestion pipeline that scrapes support documentati
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/<YOUR_USER>/kb-delta-indexer.git
+git clone https://github.com/thaipeace/kb-delta-indexer.git
 cd kb-delta-indexer
 
 # Create and activate virtual environment
@@ -69,7 +69,7 @@ docker run --rm -e GEMINI_API_KEY="your_api_key_here" kb-delta-indexer
 
 The sync job runs automatically every day at **02:00 UTC** via GitHub Actions Scheduled Cron.
 
-* **Live Daily Job Logs:** [GitHub Actions Workflow Runs](https://github.com/<YOUR_USER>/kb-delta-indexer/actions/workflows/daily_sync.yml)
+* **Live Daily Job Logs:** [GitHub Actions Workflow Runs](https://github.com/thaipeace/kb-delta-indexer/actions/workflows/daily_sync.yml)
 
 ---
 
