@@ -68,12 +68,13 @@ class BaseAssistantProvider(abc.ABC):
 class GeminiAssistantProvider(BaseAssistantProvider):
     """Google Gemini Knowledge Base provider using official google-genai SDK."""
 
-    def __init__(self, api_key: str = GEMINI_API_KEY, model_name: str = GEMINI_MODEL):
-        if not api_key:
+    def __init__(self, api_key: str | None = None, model_name: str | None = None):
+        key = api_key if api_key is not None else GEMINI_API_KEY
+        if not key:
             raise ValueError("GEMINI_API_KEY is not set. Please add it to your .env file.")
         from google import genai
-        self.client = genai.Client(api_key=api_key)
-        self.model_name = model_name
+        self.client = genai.Client(api_key=key)
+        self.model_name = model_name or GEMINI_MODEL
 
     def upload_file(self, file_path: Path, display_name: str) -> str:
         """Upload a markdown file to Gemini File API."""
@@ -211,12 +212,13 @@ class GeminiAssistantProvider(BaseAssistantProvider):
 class OpenAIAssistantProvider(BaseAssistantProvider):
     """OpenAI Assistants API v2 provider using vector stores."""
 
-    def __init__(self, api_key: str = OPENAI_API_KEY, model_name: str = OPENAI_MODEL):
-        if not api_key:
+    def __init__(self, api_key: str | None = None, model_name: str | None = None):
+        key = api_key if api_key is not None else OPENAI_API_KEY
+        if not key:
             raise ValueError("OPENAI_API_KEY is not set. Please add it to your .env file.")
         from openai import OpenAI
-        self.client = OpenAI(api_key=api_key)
-        self.model_name = model_name
+        self.client = OpenAI(api_key=key)
+        self.model_name = model_name or OPENAI_MODEL
 
     def sync_delta(self, delta_summary: DeltaSummary, state: dict[str, Any]) -> SyncResult:
         """Sync delta articles with OpenAI Vector Store."""

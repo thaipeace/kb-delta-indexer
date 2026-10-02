@@ -33,6 +33,9 @@ jobs:
           pip install -r requirements.txt
 
       - name: Execute Pytest Suite (+5 Bonus Tests)
+        env:
+          GEMINI_API_KEY: "dummy-key-for-ci-tests"
+          AI_PROVIDER: "gemini"
         run: |
           pytest tests/ -v
 
