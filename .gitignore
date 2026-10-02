@@ -1,0 +1,26 @@
+# Python environment & cache
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Secrets & Environment
+.env
+*.pem
+*.key
+
+# IDE & OS files
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Output artifacts that shouldn't be committed
+# Note: data/sync_state.json CAN be committed by CI/CD to track state
+data/articles/

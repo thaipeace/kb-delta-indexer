@@ -1,0 +1,71 @@
+name: Daily Knowledge Base Delta Sync
+
+on:
+  schedule:
+    # Runs at 02:00 UTC every day (approx 09:00 AM VN time)
+    - cron: '0 2 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: write # Allows committing updated sync_state.json back to repo
+
+jobs:
+  unit-tests:
+    name: Run Pytest Test Suite
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Execute Pytest Suite (+5 Bonus Tests)
+        run: |
+          pytest tests/ -v
+
+  docker-sync-job:
+    name: Build & Run Docker Delta Sync
+    needs: unit-tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Build Docker Container
+        run: |
+          echo "Building Docker image: kb-delta-indexer..."
+          docker build -t kb-delta-indexer .
+
+      - name: Execute Docker Batch Job
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          AI_PROVIDER: "gemini"
+          GEMINI_MODEL: "gemini-3.5-flash-lite"
+        run: |
+          echo "Executing Docker container (runs once and exits 0)..."
+          docker run --rm \
+            -e GEMINI_API_KEY="$GEMINI_API_KEY" \
+            -e AI_PROVIDER="$AI_PROVIDER" \
+            -e GEMINI_MODEL="$GEMINI_MODEL" \
+            -v ${{ github.workspace }}/data:/app/data \
+            kb-delta-indexer
+
+      - name: Commit Updated State (if changed)
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/sync_state.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-update delta sync_state.json [skip ci]" && git push)
