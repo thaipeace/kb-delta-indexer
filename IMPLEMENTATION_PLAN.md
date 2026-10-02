@@ -241,9 +241,9 @@ Viết file `README.md` ngắn gọn, chuyên nghiệp, đúng 1 trang theo chu�
    - **Daily Job Logs:** Đính kèm link công khai tới GitHub Actions Run.
    - **Sanity Test Evidence:** Nhúng ảnh `docs/sanity_test_result.png` chứng minh OptiBot trả lời đúng và có citations.
 2. **Rà soát lần cuối**:
-   - [ ] Tên repo không chứa chữ "optisigns".
-   - [ ] Không có API key nhạy cảm bị commit.
-   - [ ] Tất cả unit tests đều passed (`pytest`).
+   - [x] Tên repo không chứa chữ "optisigns".
+   - [x] Không có API key nhạy cảm bị commit (đã kiểm tra git log và .gitignore).
+   - [x] Tất cả unit tests đều passed (`pytest` 20/20 tests passed).
 
 ---
 
