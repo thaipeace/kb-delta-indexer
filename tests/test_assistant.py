@@ -98,10 +98,13 @@ def test_gemini_assistant_provider_sync_delta(mock_client_cls, tmp_path: Path):
     # Verify delete was called for old file
     mock_client.files.delete.assert_called_once_with(name="files/old456")
 
-    # Verify upload was called twice (1 added, 1 updated)
+    # Verify upload was called twice (1 chunk each for tiny test content)
     assert mock_client.files.upload.call_count == 2
 
-    # Verify state was updated
+    # Verify state was updated with chunk_file_ids list
+    assert state["articles"]["101"]["chunk_file_ids"] == ["files/mock123"]
+    assert state["articles"]["102"]["chunk_file_ids"] == ["files/mock123"]
+    # remote_file_id should point to first chunk for backward compat
     assert state["articles"]["101"]["remote_file_id"] == "files/mock123"
     assert state["articles"]["102"]["remote_file_id"] == "files/mock123"
 

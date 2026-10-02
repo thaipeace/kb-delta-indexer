@@ -27,6 +27,8 @@ class ArticleDelta:
     content: str
     remote_file_id: str | None = None
     old_remote_file_id: str | None = None
+    chunk_file_ids: list[str] = field(default_factory=list)
+    old_chunk_file_ids: list[str] = field(default_factory=list)
 
     # Backward compatibility aliases
     @property
@@ -36,6 +38,7 @@ class ArticleDelta:
     @property
     def openai_file_id(self) -> str | None:
         return self.remote_file_id
+
 
 
 @dataclass
@@ -155,6 +158,10 @@ def evaluate_delta(
             prev_hash = prev.get("content_hash", "")
             prev_updated_at = prev.get("updated_at", "")
             prev_file_id = prev.get("remote_file_id") or prev.get("openai_file_id")
+            # Load old chunk IDs; fall back to wrapping single remote_file_id for backward compat
+            prev_chunk_ids: list[str] = prev.get("chunk_file_ids") or (
+                [prev_file_id] if prev_file_id else []
+            )
 
             if prev_hash != content_hash or prev_updated_at != updated_at:
                 # Case 2: Article has changed
@@ -169,6 +176,7 @@ def evaluate_delta(
                     file_path=file_path,
                     content=content,
                     old_remote_file_id=prev_file_id,
+                    old_chunk_file_ids=prev_chunk_ids,
                 )
                 summary.updated.append(delta_item)
                 # Overwrite updated file to disk
@@ -198,16 +206,27 @@ def update_state_entry(
     delta_item: ArticleDelta,
     remote_file_id: str | None = None,
     openai_file_id: str | None = None,
+    chunk_file_ids: list[str] | None = None,
 ) -> None:
     """Update or register an article's metadata in the state dictionary."""
     state.setdefault("articles", {})
-    file_id = remote_file_id or openai_file_id or delta_item.old_remote_file_id
+
+    # Resolve chunk list; fall back to single ID for OpenAI provider (backward compat)
+    resolved_chunks: list[str] = chunk_file_ids or (
+        [remote_file_id or openai_file_id]
+        if (remote_file_id or openai_file_id)
+        else []
+    )
+    # Primary file ID = first chunk (or legacy single ID)
+    primary_id = resolved_chunks[0] if resolved_chunks else delta_item.old_remote_file_id
+
     state["articles"][str(delta_item.article_id)] = {
         "slug": delta_item.slug,
         "title": delta_item.title,
         "url": delta_item.url,
         "updated_at": delta_item.updated_at,
         "content_hash": delta_item.content_hash,
-        "remote_file_id": file_id,
-        "openai_file_id": file_id,  # Kept for compatibility
+        "chunk_file_ids": resolved_chunks,
+        "remote_file_id": primary_id,   # Backward compat & fallback
+        "openai_file_id": primary_id,   # Backward compat
     }

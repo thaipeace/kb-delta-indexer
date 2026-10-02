@@ -58,10 +58,13 @@ docker run --rm -e GEMINI_API_KEY="your_api_key_here" kb-delta-indexer
 
 ## 3. Chunking Strategy & Rationale
 
-* **Methodology:** Header-Aware Markdown Parsing combined with Token Recursive Splitting.
-* **Chunk Size:** `800 tokens` (~3,200 characters).
-* **Chunk Overlap:** `100 tokens` (~400 characters).
-* **Rationale:** Technical troubleshooting guides are step-oriented (Step 1, Step 2, Step 3). Sizing chunks at 800 tokens ensures entire procedural workflows stay cohesive under their respective `##` headers, while a 100-token overlap preserves connective context across split boundaries without fragmenting actionable guidance.
+* **Chunk Size:** `800 tokens` (~3,200 characters). **Overlap:** `100 tokens` (~400 characters).
+* **Algorithm:** Paragraph-aware recursive splitting (`_split_into_chunks` in `src/assistant.py`).  
+  Each article is split on `\n\n` (paragraph boundaries) first; if a paragraph still exceeds the budget, a hard character split is applied. This keeps step-by-step procedural instructions intact within a single chunk.
+* **Per-chunk upload:** Each chunk is written as an individual `.md` file and uploaded separately to the **Gemini File API**, so the model receives focused, size-controlled context windows rather than entire articles.
+* **Retrieval model:** Gemini performs **in-context grounding** — chunk files are passed directly as references into `generate_content` at query time. This differs from dense vector embedding (no index is built), making it reliable for factual Q&A over structured support documentation where exact wording matters.
+* **Rationale for 800 / 100:** Technical troubleshooting guides are step-oriented (`Step 1 → Step 2 → Step 3`). At 800 tokens, an entire multi-step procedure stays cohesive under its `##` header. A 100-token overlap preserves referential continuity across chunk boundaries without fragmenting actionable guidance.
+
 
 ---
 
