@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_sync": "2026-10-02T10:18:34.462345+00:00",
+  "last_sync": "2026-10-03T07:27:37.762083+00:00",
   "vector_store_id": null,
   "assistant_id": null,
   "articles": {
@@ -656,10 +656,15 @@
       "slug": "amazon-tv-firestick-troubleshooting-guide",
       "title": "Amazon TV / FireStick Troubleshooting Guide",
       "url": "https://support.optisigns.com/hc/en-us/articles/27463953562899-Amazon-TV-FireStick-Troubleshooting-Guide",
-      "updated_at": "2026-09-10T09:50:48Z",
-      "content_hash": "e46c647b0f78fb56eafad9f30a421cbed443df5c4c41292cf8a88f6ff3a90e49",
-      "remote_file_id": "files/uewby7psti2m",
-      "openai_file_id": "files/uewby7psti2m"
+      "updated_at": "2026-10-02T14:02:01Z",
+      "content_hash": "a6af304e5bc7f67fabe9858f4a0cba271fd1d28ad1e18137279f51f70c9fcac2",
+      "chunk_file_ids": [
+        "files/hnoitpgwtgnt",
+        "files/knw34wzfktmx",
+        "files/eggs2wbte2ww"
+      ],
+      "remote_file_id": "files/hnoitpgwtgnt",
+      "openai_file_id": "files/hnoitpgwtgnt"
     },
     "27458261258387": {
       "slug": "move-screens-or-devices-from-one-account-to-another",
@@ -912,6 +917,21 @@
       "content_hash": "bb1bcf3d5ae0473fbd1e960b7a387f4ebd2739d6e03335177816f3eacb1db488",
       "remote_file_id": "files/ejml3rthga3a",
       "openai_file_id": "files/ejml3rthga3a"
+    },
+    "17604055961747": {
+      "slug": "how-to-create-a-content-library-kiosk",
+      "title": "How to Create a Content Library Kiosk",
+      "url": "https://support.optisigns.com/hc/en-us/articles/17604055961747-How-to-Create-a-Content-Library-Kiosk",
+      "updated_at": "2026-09-10T09:49:41Z",
+      "content_hash": "9853eeb2da4b41611384c6baca29ab51afb66614becea406d4cd736654bc09ae",
+      "chunk_file_ids": [
+        "files/zbifgxg37917",
+        "files/pnego5jpsqfe",
+        "files/rqdqzm00zmgj",
+        "files/wv0lq7zygiu8"
+      ],
+      "remote_file_id": "files/zbifgxg37917",
+      "openai_file_id": "files/zbifgxg37917"
     }
   },
   "provider": "gemini"
