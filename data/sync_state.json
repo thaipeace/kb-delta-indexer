@@ -10,8 +10,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/55906396437523-How-to-Use-the-Weather-Radar-App",
       "updated_at": "2026-09-29T19:04:57Z",
       "content_hash": "d8c65749d31537342452aabd7c32a585070d5837c58056e4be5e2c30edda17e6",
-      "remote_file_id": "files/tnexptp4b3st",
-      "openai_file_id": "files/tnexptp4b3st"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousetheweatherradarapp-484umklweh2i",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousetheweatherradarapp-484umklweh2i",
+      "chunk_count": 3
     },
     "55895814798739": {
       "slug": "how-to-display-salesforce-dashboards-and-reports-on",
@@ -19,8 +20,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/55895814798739-How-to-Display-Salesforce-Dashboards-and-Reports-on-OptiSigns",
       "updated_at": "2026-09-29T19:44:32Z",
       "content_hash": "f0c697aca587bfd015bae3d1c3211ecf6875aa7bc61ade6cc7c77fe21f199aa0",
-      "remote_file_id": "files/wuao5fbsguko",
-      "openai_file_id": "files/wuao5fbsguko"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplaysalesforcedashb-98xp46i936pk",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplaysalesforcedashb-98xp46i936pk",
+      "chunk_count": 7
     },
     "55719322614803": {
       "slug": "inbound-webhook-datasources-in-designer",
@@ -28,8 +30,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/55719322614803-Inbound-Webhook-DataSources-in-Designer",
       "updated_at": "2026-09-24T17:00:10Z",
       "content_hash": "28020d9b4d60aac30aea7224171d7661c336f5ddf82c12ef79f56bcb6ea87cd8",
-      "remote_file_id": "files/lgm1zbrcqbvl",
-      "openai_file_id": "files/lgm1zbrcqbvl"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/inboundwebhookdatasourcesin-kmalyi3kyo4u",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/inboundwebhookdatasourcesin-kmalyi3kyo4u",
+      "chunk_count": 5
     },
     "55709616003219": {
       "slug": "using-the-x-social-app-add-on",
@@ -37,8 +40,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/55709616003219-Using-the-X-Social-App-Add-On",
       "updated_at": "2026-09-23T19:58:50Z",
       "content_hash": "2c65ccec658741556f7fc42b54e6b57c3ac2701bb59ec745af368b432c0f8e6b",
-      "remote_file_id": "files/ffkg62h8konp",
-      "openai_file_id": "files/ffkg62h8konp"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/usingthexsocialappaddon-i2rgqf3w6aub",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/usingthexsocialappaddon-i2rgqf3w6aub",
+      "chunk_count": 4
     },
     "55669121864979": {
       "slug": "using-the-flight-schedule-app",
@@ -46,8 +50,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/55669121864979-Using-the-Flight-Schedule-App",
       "updated_at": "2026-09-22T18:59:24Z",
       "content_hash": "571037cb26299bc60aa2111a3302d8354110b3ceea9dff73c5eb71d638573776",
-      "remote_file_id": "files/kiehk519dj2k",
-      "openai_file_id": "files/kiehk519dj2k"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/usingtheflightscheduleapp-likodr2sn01s",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/usingtheflightscheduleapp-likodr2sn01s",
+      "chunk_count": 4
     },
     "55640830295187": {
       "slug": "using-the-japan-transit-app",
@@ -55,8 +60,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/55640830295187-Using-the-Japan-Transit-App",
       "updated_at": "2026-09-21T20:41:52Z",
       "content_hash": "6417860920daeb5bcc4707ec7aaaaa825757dc08b075486e9e158d43260553ca",
-      "remote_file_id": "files/bluzta61nzq5",
-      "openai_file_id": "files/bluzta61nzq5"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/usingthejapantransitapp-qep9uy16l09k",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/usingthejapantransitapp-qep9uy16l09k",
+      "chunk_count": 4
     },
     "55450681344915": {
       "slug": "connect-sharepoint-news-to-optisigns-digital-signage",
@@ -64,8 +70,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/55450681344915-Connect-SharePoint-News-to-OptiSigns-Digital-Signage",
       "updated_at": "2026-09-15T23:09:01Z",
       "content_hash": "c74b14506f8a44dc23b3c70b4c5eae1544de008fb0eebdd800678e631cdc4a2f",
-      "remote_file_id": "files/mgibf2tf6utg",
-      "openai_file_id": "files/mgibf2tf6utg"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/connectsharepointnewstoopti-8oo72bm7h3tl",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/connectsharepointnewstoopti-8oo72bm7h3tl",
+      "chunk_count": 5
     },
     "55447693635731": {
       "slug": "how-to-display-grafana-dashboards-on-optisigns",
@@ -73,8 +80,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/55447693635731-How-to-Display-Grafana-Dashboards-on-OptiSigns",
       "updated_at": "2026-09-22T14:14:49Z",
       "content_hash": "838a9f0430c9949d3b939c1d369544b596e92a1d091e83c8a598cc4b66857d0a",
-      "remote_file_id": "files/f6a16ctd4xje",
-      "openai_file_id": "files/f6a16ctd4xje"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplaygrafanadashboar-gvv5zz7xlt8t",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplaygrafanadashboar-gvv5zz7xlt8t",
+      "chunk_count": 6
     },
     "55416186918163": {
       "slug": "how-to-get-a-microsoft-teams-webhook-url-for-optisigns",
@@ -82,8 +90,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/55416186918163-How-to-Get-a-Microsoft-Teams-Webhook-URL-for-OptiSigns-Broadcast",
       "updated_at": "2026-09-15T17:33:06Z",
       "content_hash": "1bc0b9ffa80617363b17fdb171fdc8de0f3c453f60c899bc8b6687d375a8f421",
-      "remote_file_id": "files/nbkg9tnu73pd",
-      "openai_file_id": "files/nbkg9tnu73pd"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtogetamicrosoftteamswebh-wd1e6poptqhm",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtogetamicrosoftteamswebh-wd1e6poptqhm",
+      "chunk_count": 2
     },
     "55416185869331": {
       "slug": "broadcast-send-scheduled-snapshots-of-your-dashboards",
@@ -91,8 +100,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/55416185869331-Broadcast-Send-Scheduled-Snapshots-of-Your-Dashboards",
       "updated_at": "2026-09-23T16:24:51Z",
       "content_hash": "798a990384306de5af4e69e071da1db6816311ca82eabd6c24fd822b0da020aa",
-      "remote_file_id": "files/ry0tu6skm9g0",
-      "openai_file_id": "files/ry0tu6skm9g0"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/broadcastsendscheduledsnaps-4dh2ujnwzsrn",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/broadcastsendscheduledsnaps-4dh2ujnwzsrn",
+      "chunk_count": 4
     },
     "54095075680275": {
       "slug": "optidev-add-on-free-trial-and-pricing",
@@ -100,8 +110,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/54095075680275-OptiDev-Add-on-Free-Trial-and-Pricing",
       "updated_at": "2026-08-05T18:22:19Z",
       "content_hash": "dff5d244477dc2ec441ac878f4e43696f61bd9c3ee9c2e775df3c0e9197bcd4f",
-      "remote_file_id": "files/5t62e761t7dw",
-      "openai_file_id": "files/5t62e761t7dw"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/optidevaddonfreetrialandpri-gyu4v891fbdr",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/optidevaddonfreetrialandpri-gyu4v891fbdr",
+      "chunk_count": 4
     },
     "53952018650515": {
       "slug": "how-to-display-databricks-dashboards-on-optisigns",
@@ -109,8 +120,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/53952018650515-How-to-Display-Databricks-Dashboards-on-OptiSigns",
       "updated_at": "2026-08-11T19:04:29Z",
       "content_hash": "5dc0f5afd6682aea815c4faf406974527ab2b670cd3fd33d9eb9ff433ee7b319",
-      "remote_file_id": "files/ilfsvjie955y",
-      "openai_file_id": "files/ilfsvjie955y"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplaydatabricksdashb-gc7vicu3kdp0",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplaydatabricksdashb-gc7vicu3kdp0",
+      "chunk_count": 5
     },
     "53497007807251": {
       "slug": "device-management-and-mass-provisioning",
@@ -118,8 +130,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/53497007807251-Device-Management-and-Mass-Provisioning",
       "updated_at": "2026-07-16T16:39:52Z",
       "content_hash": "ba3635276fb75e89d97979433803ac1df34031b1e4d4c3f1607b647a96abaa56",
-      "remote_file_id": "files/ydb23h3yqms3",
-      "openai_file_id": "files/ydb23h3yqms3"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/devicemanagementandmassprov-i5q9d2dnxst8",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/devicemanagementandmassprov-i5q9d2dnxst8",
+      "chunk_count": 4
     },
     "53293393593491": {
       "slug": "refer-earn-optisigns-referral-program",
@@ -127,8 +140,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/53293393593491-Refer-Earn-OptiSigns-Referral-Program",
       "updated_at": "2026-07-08T17:09:50Z",
       "content_hash": "ec874bb5d3145787cb7f9b3ebd7f4a2af58ee39441aa3d647d7bc7b572a471c7",
-      "remote_file_id": "files/ycd3mhlltwf8",
-      "openai_file_id": "files/ycd3mhlltwf8"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/referearnoptisignsreferralp-of2rh1ewaos8",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/referearnoptisignsreferralp-of2rh1ewaos8",
+      "chunk_count": 2
     },
     "53216900345875": {
       "slug": "what-access-does-optisigns-have-to-my-account-and-devices",
@@ -136,8 +150,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/53216900345875-What-Access-Does-OptiSigns-Have-to-My-Account-and-Devices",
       "updated_at": "2026-07-06T15:29:04Z",
       "content_hash": "9cc041e34c9b99cd517209272f1966a58f02ecaba063de083df7b48654e06054",
-      "remote_file_id": "files/a6ua8xta5rc2",
-      "openai_file_id": "files/a6ua8xta5rc2"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/whataccessdoesoptisignshave-65j0w4teo1lc",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/whataccessdoesoptisignshave-65j0w4teo1lc",
+      "chunk_count": 2
     },
     "53095698149011": {
       "slug": "using-the-japan-earthquake-app",
@@ -145,8 +160,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/53095698149011-Using-the-Japan-Earthquake-App",
       "updated_at": "2026-08-12T14:38:37Z",
       "content_hash": "e8c3a6b96725cae3237e20f8d8bcb83346d5a2757894bdf5497d18bef049b4c2",
-      "remote_file_id": "files/32d8ziqf0cf4",
-      "openai_file_id": "files/32d8ziqf0cf4"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/usingthejapanearthquakeapp-v88n74au20hq",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/usingthejapanearthquakeapp-v88n74au20hq",
+      "chunk_count": 2
     },
     "53028011485715": {
       "slug": "how-to-display-a-snowflake-dashboard-with-optisigns",
@@ -154,8 +170,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/53028011485715-How-to-Display-a-Snowflake-Dashboard-with-OptiSigns",
       "updated_at": "2026-07-01T21:59:22Z",
       "content_hash": "de1902ed43be49b798c32a17adb2205b51af9542b2ab55bf4b33e8ea1675c22c",
-      "remote_file_id": "files/f1rmk82vedud",
-      "openai_file_id": "files/f1rmk82vedud"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplayasnowflakedashb-6e3x7licf333",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplayasnowflakedashb-6e3x7licf333",
+      "chunk_count": 3
     },
     "52523606879251": {
       "slug": "optisigns-digital-signage-app-for-zoom-adding-using-and-the",
@@ -163,8 +180,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/52523606879251-OptiSigns-Digital-Signage-App-for-Zoom-Adding-Using-and-Removing-the-App",
       "updated_at": "2026-06-11T22:24:43Z",
       "content_hash": "606abeb7c7e3b8c4b4e21da56384ad51dc972199c9e48f1b4b12ddb23bf630a0",
-      "remote_file_id": "files/bai4aff3790z",
-      "openai_file_id": "files/bai4aff3790z"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/optisignsdigitalsignageappf-eky7w9zcml2o",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/optisignsdigitalsignageappf-eky7w9zcml2o",
+      "chunk_count": 3
     },
     "52412502456083": {
       "slug": "connect-google-meet-hardware-to-optisigns-digital-signage",
@@ -172,8 +190,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/52412502456083-Connect-Google-Meet-Hardware-to-OptiSigns-Digital-Signage",
       "updated_at": "2026-06-15T19:14:07Z",
       "content_hash": "b1381c4def40c623ffeac2b01d59b2032272ea7148b8049823f3f508b3ec6e34",
-      "remote_file_id": "files/12zxr2xng461",
-      "openai_file_id": "files/12zxr2xng461"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/connectgooglemeethardwareto-k96xtq8mm3sg",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/connectgooglemeethardwareto-k96xtq8mm3sg",
+      "chunk_count": 4
     },
     "52350277262483": {
       "slug": "connect-microsoft-teams-rooms-to-optisigns-digital-signage",
@@ -181,8 +200,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/52350277262483-Connect-Microsoft-Teams-Rooms-to-OptiSigns-Digital-Signage",
       "updated_at": "2026-08-27T19:45:55Z",
       "content_hash": "60281f42990e514470b55b88310d851b267c0471d468a838c37b02634782e414",
-      "remote_file_id": "files/gje7618pd0ba",
-      "openai_file_id": "files/gje7618pd0ba"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/connectmicrosoftteamsroomst-5ntkarp2jf8k",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/connectmicrosoftteamsroomst-5ntkarp2jf8k",
+      "chunk_count": 6
     },
     "52113036672403": {
       "slug": "room-integrations-turn-your-meeting-rooms-into-digital",
@@ -190,8 +210,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/52113036672403-Room-Integrations-Turn-Your-Meeting-Rooms-into-Digital-Signage",
       "updated_at": "2026-07-08T14:58:11Z",
       "content_hash": "159af433e9bdc144a21817be83fb0e562d17b1eb86d7e6bb4805cd23023dcbc3",
-      "remote_file_id": "files/2135ec9o4pn2",
-      "openai_file_id": "files/2135ec9o4pn2"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/roomintegrationsturnyourmee-fnfy8tlsg69j",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/roomintegrationsturnyourmee-fnfy8tlsg69j",
+      "chunk_count": 3
     },
     "52069065128723": {
       "slug": "connect-zoom-rooms-to-optisigns-digital-signage",
@@ -199,8 +220,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/52069065128723-Connect-Zoom-Rooms-to-OptiSigns-Digital-Signage",
       "updated_at": "2026-07-17T22:17:54Z",
       "content_hash": "562ed2941cce6156840e936da48ff3a496af5f1b534256ec31252b90ba1a984c",
-      "remote_file_id": "files/pnxats6z1hmb",
-      "openai_file_id": "files/pnxats6z1hmb"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/connectzoomroomstooptisigns-aesffoa72kvn",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/connectzoomroomstooptisigns-aesffoa72kvn",
+      "chunk_count": 4
     },
     "51343184586643": {
       "slug": "connect-cisco-webex-rooms-to-optisigns-digital-signage",
@@ -208,8 +230,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/51343184586643-Connect-Cisco-Webex-Rooms-to-OptiSigns-Digital-Signage",
       "updated_at": "2026-07-01T16:55:46Z",
       "content_hash": "a7facd46cf7821bfd1f72309c44fc296a4c8218e5faed9ce3d2fe191f5e75100",
-      "remote_file_id": "files/01nrdewrcxk8",
-      "openai_file_id": "files/01nrdewrcxk8"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/connectciscowebexroomstoopt-vd684u9k7umv",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/connectciscowebexroomstoopt-vd684u9k7umv",
+      "chunk_count": 4
     },
     "49039295567891": {
       "slug": "chromeos-pwa-instructions",
@@ -217,8 +240,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/49039295567891-ChromeOS-PWA-Instructions",
       "updated_at": "2026-05-05T15:48:27Z",
       "content_hash": "6a28d08b13dcdc8cd164d30ed85c48d605fa4a1803ad01454afc897e6983728f",
-      "remote_file_id": "files/1dwv4h1h8xl1",
-      "openai_file_id": "files/1dwv4h1h8xl1"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/chromeospwainstructions-82nx5ddnuoz1",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/chromeospwainstructions-82nx5ddnuoz1",
+      "chunk_count": 3
     },
     "48751096814995": {
       "slug": "how-to-use-the-google-ads-dashboard-app",
@@ -226,8 +250,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/48751096814995-How-to-Use-the-Google-Ads-Dashboard-App",
       "updated_at": "2026-02-02T17:54:16Z",
       "content_hash": "ea4723086594f17a0af4919428ad64a9542b43945b3b9280522b5d3e566ca8c3",
-      "remote_file_id": "files/2qs0qkqv6xq7",
-      "openai_file_id": "files/2qs0qkqv6xq7"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethegoogleadsdashboa-8cxm9qzgphmq",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethegoogleadsdashboa-8cxm9qzgphmq",
+      "chunk_count": 2
     },
     "48656950622227": {
       "slug": "how-to-use-the-google-search-console-app",
@@ -235,8 +260,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/48656950622227-How-to-Use-the-Google-Search-Console-App",
       "updated_at": "2026-02-02T17:56:42Z",
       "content_hash": "99e33cf9fbc4c2c5bc6e400d7913e23f3d00982bf6dcacf4491ad76640e1f82a",
-      "remote_file_id": "files/j389arqx0wub",
-      "openai_file_id": "files/j389arqx0wub"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethegooglesearchcons-55ejlnempa03",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethegooglesearchcons-55ejlnempa03",
+      "chunk_count": 2
     },
     "48626115821459": {
       "slug": "how-to-use-the-youtube-dashboard-app",
@@ -244,8 +270,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/48626115821459-How-to-Use-the-YouTube-Dashboard-App",
       "updated_at": "2026-02-02T15:32:55Z",
       "content_hash": "48fb250111cdda7a712a776e66c17ee29ed68d734fc30eb269b55e892c67c851",
-      "remote_file_id": "files/3xb3s0eszcc9",
-      "openai_file_id": "files/3xb3s0eszcc9"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousetheyoutubedashboard-1tk7zppcrs69",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousetheyoutubedashboard-1tk7zppcrs69",
+      "chunk_count": 2
     },
     "48241081473043": {
       "slug": "operational-schedule-troubleshooting",
@@ -253,8 +280,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/48241081473043-Operational-Schedule-Troubleshooting",
       "updated_at": "2026-04-20T21:26:17Z",
       "content_hash": "5db625d40269225f00e36cda7f73f55d00fe5af4506d2cded73914946139ae3d",
-      "remote_file_id": "files/4rstges5oux1",
-      "openai_file_id": "files/4rstges5oux1"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/operationalscheduletroubles-vqj519lwvda1",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/operationalscheduletroubles-vqj519lwvda1",
+      "chunk_count": 3
     },
     "45619214182803": {
       "slug": "how-to-set-up-an-outlook-calendar-app-with-shared",
@@ -262,8 +290,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/45619214182803-How-to-Set-Up-an-Outlook-Calendar-App-with-Shared-Permissions",
       "updated_at": "2025-10-17T16:01:18Z",
       "content_hash": "abb44046d4826c8738050e3879074bf66dfbcbb1b160cfa9ad29bbd4413168b9",
-      "remote_file_id": "files/t035cyivxn1z",
-      "openai_file_id": "files/t035cyivxn1z"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtosetupanoutlookcalendar-efkut91g3w37",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtosetupanoutlookcalendar-efkut91g3w37",
+      "chunk_count": 2
     },
     "44890229616403": {
       "slug": "using-an-enterprise-network-802-1x-with-optisigns",
@@ -271,8 +300,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/44890229616403-Using-an-Enterprise-Network-802-1x-with-OptiSigns",
       "updated_at": "2026-05-20T18:11:11Z",
       "content_hash": "bf45e6d8bd2446b5e527580a08b0609f3121410cb1e1120ce49956d5fc497177",
-      "remote_file_id": "files/y2u8t0w28fyz",
-      "openai_file_id": "files/y2u8t0w28fyz"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/usinganenterprisenetwork802-nfgp89yhijyz",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/usinganenterprisenetwork802-nfgp89yhijyz",
+      "chunk_count": 2
     },
     "43657735780627": {
       "slug": "user-management-example-chain-restaurant-or-retail-store",
@@ -280,8 +310,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/43657735780627-User-Management-Example-Chain-Restaurant-or-Retail-Store-with-Multiple-Locations",
       "updated_at": "2025-08-28T19:28:55Z",
       "content_hash": "492a9007ee780e9bfd72161d53c3fe39218aa378c52eb23c40970d3f2eef53c9",
-      "remote_file_id": "files/kuurnci2krbo",
-      "openai_file_id": "files/kuurnci2krbo"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/usermanagementexamplechainr-bahj5wxlqi2g",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/usermanagementexamplechainr-bahj5wxlqi2g",
+      "chunk_count": 5
     },
     "42087942047379": {
       "slug": "getting-started-with-designer",
@@ -289,8 +320,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/42087942047379-Getting-Started-with-Designer",
       "updated_at": "2026-09-10T10:46:39Z",
       "content_hash": "1d092b70f5087539460d2120704f6f20f3ca808b40512fd94842d40da1549a39",
-      "remote_file_id": "files/gozl193h5k4x",
-      "openai_file_id": "files/gozl193h5k4x"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/gettingstartedwithdesigner-b6b3d3w825xj",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/gettingstartedwithdesigner-b6b3d3w825xj",
+      "chunk_count": 6
     },
     "41432385864595": {
       "slug": "designer-2-0-new-features",
@@ -298,8 +330,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/41432385864595-Designer-2-0-New-Features",
       "updated_at": "2026-05-12T14:17:09Z",
       "content_hash": "2872b47b41427c4789a6e30aa14a6bae42f5734494be817b9900b9fcac11d439",
-      "remote_file_id": "files/x19wcfe0tqr2",
-      "openai_file_id": "files/x19wcfe0tqr2"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/designer20newfeatures-p1nbzpxyo8oy",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/designer20newfeatures-p1nbzpxyo8oy",
+      "chunk_count": 5
     },
     "40736654972563": {
       "slug": "optisigns-pro-promax-player-troubleshooting-guide",
@@ -307,8 +340,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/40736654972563-OptiSigns-Pro-ProMax-Player-Troubleshooting-Guide",
       "updated_at": "2026-01-13T21:20:16Z",
       "content_hash": "16456ca7749fffd0d9b858cc16701a0ec866413f1bef375eabd321dd9fb9fcb9",
-      "remote_file_id": "files/2ohre7klf36l",
-      "openai_file_id": "files/2ohre7klf36l"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/optisignspropromaxplayertro-cnoe7nxcfcy7",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/optisignspropromaxplayertro-cnoe7nxcfcy7",
+      "chunk_count": 4
     },
     "40671590645651": {
       "slug": "how-to-play-licensed-background-music-on-digital-signs-with",
@@ -316,8 +350,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/40671590645651-How-to-Play-Licensed-Background-Music-on-Digital-Signs-with-OptiSound",
       "updated_at": "2026-09-18T13:02:26Z",
       "content_hash": "f337ac439a46e596da7b598165f152137ed6310c7bd3fc1102e56cdc0e0397fc",
-      "remote_file_id": "files/lt291dywwomv",
-      "openai_file_id": "files/lt291dywwomv"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoplaylicensedbackground-d7ggynh97cvj",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoplaylicensedbackground-d7ggynh97cvj",
+      "chunk_count": 2
     },
     "360051014713": {
       "slug": "how-to-use-youtube-with-optisigns",
@@ -325,8 +360,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/360051014713-How-to-Use-YouTube-with-OptiSigns",
       "updated_at": "2026-09-24T14:52:18Z",
       "content_hash": "3139467ff9fd8534421ef35c9c6e2621cd7115a7c70c8a6c4485170f0bcb0f64",
-      "remote_file_id": "files/87te44cph7ja",
-      "openai_file_id": "files/87te44cph7ja"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtouseyoutubewithoptisign-s2y59ozs2l1n",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtouseyoutubewithoptisign-s2y59ozs2l1n",
+      "chunk_count": 2
     },
     "40212027797523": {
       "slug": "disk-encryption",
@@ -334,8 +370,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/40212027797523-Disk-Encryption",
       "updated_at": "2026-09-10T10:46:32Z",
       "content_hash": "78e2d1b27a419901e6aaac6320d8e683119e002360836d98c93446d4f22d1ff9",
-      "remote_file_id": "files/2j7ny1a9s2q2",
-      "openai_file_id": "files/2j7ny1a9s2q2"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/diskencryption-40wvxlidwub3",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/diskencryption-40wvxlidwub3",
+      "chunk_count": 1
     },
     "40147900639891": {
       "slug": "optistick-troubleshooting-guide",
@@ -343,8 +380,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/40147900639891-OptiStick-Troubleshooting-Guide",
       "updated_at": "2026-06-26T13:52:36Z",
       "content_hash": "d83f2d93b848e9028c4037a7176e9075d4bfa3b47ac486a7e4f08ae982b827af",
-      "remote_file_id": "files/id94jirv2zld",
-      "openai_file_id": "files/id94jirv2zld"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/optisticktroubleshootinggui-og9xg6ze3ky1",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/optisticktroubleshootinggui-og9xg6ze3ky1",
+      "chunk_count": 5
     },
     "39488874989587": {
       "slug": "fixing-unexpected-screen-rotation-incorrect-orientation-with",
@@ -352,8 +390,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/39488874989587-Fixing-Unexpected-Screen-Rotation-Incorrect-Orientation-with-OptiSigns-Android-Stick",
       "updated_at": "2026-09-10T10:46:30Z",
       "content_hash": "b0d4905153085ecfdca749316e02cd048b4efab79cbb1fecc942b811677c87be",
-      "remote_file_id": "files/f9x0jopwvp1k",
-      "openai_file_id": "files/f9x0jopwvp1k"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/fixingunexpectedscreenrotat-nndcfq93r3e8",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/fixingunexpectedscreenrotat-nndcfq93r3e8",
+      "chunk_count": 1
     },
     "39250660729747": {
       "slug": "how-to-use-the-tableau-app",
@@ -361,8 +400,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/39250660729747-How-to-Use-the-Tableau-App",
       "updated_at": "2026-01-06T22:36:49Z",
       "content_hash": "e54b77d3a349164940da956ac58272f5622e12a3978da68d0183dbe8c027594e",
-      "remote_file_id": "files/65grre7vqgrv",
-      "openai_file_id": "files/65grre7vqgrv"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethetableauapp-7aavh4iwhgdr",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethetableauapp-7aavh4iwhgdr",
+      "chunk_count": 4
     },
     "39080869746067": {
       "slug": "handle-oauth-authentication-using-api-gateway-pre-request",
@@ -370,8 +410,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/39080869746067-Handle-OAuth-Authentication-using-API-Gateway-Pre-request-Configuration",
       "updated_at": "2026-09-10T10:46:28Z",
       "content_hash": "0eaed5ccadb58bf5dee974c11a4464ba9756b4d09f99a6bded96fcc4bef4a4b5",
-      "remote_file_id": "files/ujv20a5hwwv5",
-      "openai_file_id": "files/ujv20a5hwwv5"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/handleoauthauthenticationus-8k3n2wm0vz2p",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/handleoauthauthenticationus-8k3n2wm0vz2p",
+      "chunk_count": 1
     },
     "38062664690195": {
       "slug": "tagging-in-optisigns",
@@ -379,8 +420,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/38062664690195-Tagging-in-OptiSigns",
       "updated_at": "2025-09-09T19:34:07Z",
       "content_hash": "4f34a4dfde0d4a076f47f8eb02b25d59d785099d572b2ecd01c525cbd60afef7",
-      "remote_file_id": "files/t1wx589cadhz",
-      "openai_file_id": "files/t1wx589cadhz"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/tagginginoptisigns-qlcms97ti5ey",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/tagginginoptisigns-qlcms97ti5ey",
+      "chunk_count": 4
     },
     "37966066335891": {
       "slug": "getting-started-with-an-optisigns-free-trial",
@@ -388,8 +430,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/37966066335891-Getting-Started-with-an-OptiSigns-Free-Trial",
       "updated_at": "2026-09-10T10:46:25Z",
       "content_hash": "fb9ad400364154c3838bfaf2e29630c899ebe7c319e3ff37a2bbbbc85d25b574",
-      "remote_file_id": "files/jnjsdn53xojf",
-      "openai_file_id": "files/jnjsdn53xojf"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/gettingstartedwithanoptisig-2uflngvy1s0q",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/gettingstartedwithanoptisig-2uflngvy1s0q",
+      "chunk_count": 2
     },
     "36911639377683": {
       "slug": "how-to-use-optisigns-with-microsoft-teams-rooms",
@@ -397,8 +440,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/36911639377683-How-to-Use-OptiSigns-with-Microsoft-Teams-Rooms",
       "updated_at": "2026-09-30T21:54:02Z",
       "content_hash": "e1ed4d74d59717cd8c1336aa63dbdc881062c71f19316442acd8977933e9ac26",
-      "remote_file_id": "files/ftk65dcqrhv2",
-      "openai_file_id": "files/ftk65dcqrhv2"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtouseoptisignswithmicros-48uymkwil7t2",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtouseoptisignswithmicros-48uymkwil7t2",
+      "chunk_count": 2
     },
     "36501302096915": {
       "slug": "how-to-access-the-troubleshooting-page-of-the-optisigns",
@@ -406,8 +450,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/36501302096915-How-to-access-the-Troubleshooting-page-of-the-OptiSigns-Player",
       "updated_at": "2026-09-10T16:15:36Z",
       "content_hash": "93648d2a01ff37bd22fc8d1354b7a6a56a1122eafbe610147891ed3c0b180328",
-      "remote_file_id": "files/eveyw7r2f1k1",
-      "openai_file_id": "files/eveyw7r2f1k1"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoaccessthetroubleshooti-fm1u80i5f23k",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoaccessthetroubleshooti-fm1u80i5f23k",
+      "chunk_count": 2
     },
     "35749502945555": {
       "slug": "how-to-using-sepa-and-ideal-for-eur-currency-subscription",
@@ -415,8 +460,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/35749502945555-How-to-Using-SEPA-and-iDEAL-for-EUR-Currency-Subscription-Payments",
       "updated_at": "2026-09-10T10:46:19Z",
       "content_hash": "87353ca4eb014f222c41cc1b808a045dc71b30cf0ec63f05b0ca3af31cf626f6",
-      "remote_file_id": "files/y9fca3gut48m",
-      "openai_file_id": "files/y9fca3gut48m"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousingsepaandidealforeu-jyo8rj3zxxuk",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousingsepaandidealforeu-jyo8rj3zxxuk",
+      "chunk_count": 1
     },
     "35184720136595": {
       "slug": "how-to-install-a-root-certificate-and-display-an-internal-on",
@@ -424,8 +470,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/35184720136595-How-to-Install-a-Root-Certificate-and-Display-an-Internal-Website-on-Screens",
       "updated_at": "2025-09-04T16:54:34Z",
       "content_hash": "85beac7192e32179a06ec2c188c6cc22365ab4f8b97d2eeb092449ec524d7946",
-      "remote_file_id": "files/tbkahb2mz90m",
-      "openai_file_id": "files/tbkahb2mz90m"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoinstallarootcertificat-cl47bz8evgvt",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoinstallarootcertificat-cl47bz8evgvt",
+      "chunk_count": 5
     },
     "34379983350163": {
       "slug": "accepted-payment-methods",
@@ -433,8 +480,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/34379983350163-Accepted-Payment-Methods",
       "updated_at": "2025-09-04T15:39:32Z",
       "content_hash": "a112c73e1549853646dd594ccfff9b70c48bd56079aaa2b7ebaea35ad76acd99",
-      "remote_file_id": "files/ooagl6hayg0l",
-      "openai_file_id": "files/ooagl6hayg0l"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/acceptedpaymentmethods-nkmjunnx2zml",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/acceptedpaymentmethods-nkmjunnx2zml",
+      "chunk_count": 1
     },
     "33940834613139": {
       "slug": "what-do-i-get-with-an-optisigns-free-plan",
@@ -442,8 +490,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/33940834613139-What-Do-I-Get-With-an-OptiSigns-Free-Plan",
       "updated_at": "2026-09-10T09:51:52Z",
       "content_hash": "fbe0844d97a0cd3e72aad3dd55e701ab3d7de6dbf9e12f2cd22f801d682a8b7d",
-      "remote_file_id": "files/i1idmpa2nffv",
-      "openai_file_id": "files/i1idmpa2nffv"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/whatdoigetwithanoptisignsfr-6rvk3yf4tsn9",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/whatdoigetwithanoptisignsfr-6rvk3yf4tsn9",
+      "chunk_count": 2
     },
     "33382537925267": {
       "slug": "making-a-video-wall-with-optisigns-video-wall-app",
@@ -451,8 +500,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/33382537925267-Making-a-Video-Wall-with-OptiSigns-Video-Wall-App",
       "updated_at": "2026-09-10T09:51:47Z",
       "content_hash": "341ffbb2c68b5266d8373f15c3b38ef690ec03a81cdf032e4052f342e7f18e45",
-      "remote_file_id": "files/x6waumxvlhy1",
-      "openai_file_id": "files/x6waumxvlhy1"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/makingavideowallwithoptisig-hnlzlo3w0pr5",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/makingavideowallwithoptisig-hnlzlo3w0pr5",
+      "chunk_count": 6
     },
     "32860569148819": {
       "slug": "how-to-set-up-a-power-bi-service-principal-for-use-in",
@@ -460,8 +510,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/32860569148819-How-to-Set-Up-a-Power-BI-Service-Principal-for-Use-in-OptiSigns",
       "updated_at": "2026-09-28T20:24:07Z",
       "content_hash": "5ac3b90daea425c6e33dd1f478bb05540c9ed33868395df3dd47d0870b47a96b",
-      "remote_file_id": "files/s5hhwng1swgt",
-      "openai_file_id": "files/s5hhwng1swgt"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtosetupapowerbiservicepr-6126tywfwxxw",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtosetupapowerbiservicepr-6126tywfwxxw",
+      "chunk_count": 3
     },
     "32839794222099": {
       "slug": "display-salesforce-dashboards-with-mfa-using-web-scripting",
@@ -478,8 +529,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/31960461758611-How-to-Order-a-Preconfigured-OptiSigns-Android-Stick",
       "updated_at": "2026-09-10T09:51:37Z",
       "content_hash": "1ffb77a6b525f81a97c69f02eb7207df1313e6a3d6b1e451452eb6c1e7708491",
-      "remote_file_id": "files/iove1sxa1g7z",
-      "openai_file_id": "files/iove1sxa1g7z"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoorderapreconfiguredopt-cjeic03joi6x",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoorderapreconfiguredopt-cjeic03joi6x",
+      "chunk_count": 1
     },
     "31860170199955": {
       "slug": "integrating-point-of-sale-pos-systems-to-build-digital-menu",
@@ -487,8 +539,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/31860170199955-Integrating-Point-of-Sale-POS-Systems-to-Build-Digital-Menu-Boards-with-OptiSync",
       "updated_at": "2026-09-10T09:51:36Z",
       "content_hash": "f6039e49da399be8616e4a26ee08c42b3d4f7c355b83d16cd12f8fcaa938ed3b",
-      "remote_file_id": "files/2zmxhs1d1zv7",
-      "openai_file_id": "files/2zmxhs1d1zv7"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/integratingpointofsalepossy-q81vnlyzexmg",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/integratingpointofsalepossy-q81vnlyzexmg",
+      "chunk_count": 6
     },
     "31695220475283": {
       "slug": "configuring-mass-deployment-with-jamf-pro-mdm-on-apple",
@@ -496,8 +549,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/31695220475283-Configuring-Mass-Deployment-with-Jamf-Pro-MDM-on-Apple-Devices",
       "updated_at": "2026-09-21T19:42:14Z",
       "content_hash": "61ab6604c1b44a78fa27739163d9a700789a73f089e717bbd6d365a9ffbc689e",
-      "remote_file_id": "files/tb7n6fhl9m4s",
-      "openai_file_id": "files/tb7n6fhl9m4s"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/configuringmassdeploymentwi-6mb1q2v1ehz0",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/configuringmassdeploymentwi-6mb1q2v1ehz0",
+      "chunk_count": 2
     },
     "31449657955347": {
       "slug": "getting-started-with-touch-screen-kiosks",
@@ -505,8 +559,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/31449657955347-Getting-Started-with-Touch-Screen-Kiosks",
       "updated_at": "2026-09-10T09:51:34Z",
       "content_hash": "dc1eb229e0055a6f14470323d6c302900b158bed8176b44c227ea4cd97ef0f81",
-      "remote_file_id": "files/mce40zp1k5nw",
-      "openai_file_id": "files/mce40zp1k5nw"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/gettingstartedwithtouchscre-zku8k3axvsbu",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/gettingstartedwithtouchscre-zku8k3axvsbu",
+      "chunk_count": 4
     },
     "31113088917907": {
       "slug": "how-to-use-toast-api-data-with-optisigns",
@@ -514,8 +569,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/31113088917907-How-to-use-Toast-API-data-with-OptiSigns",
       "updated_at": "2025-09-02T20:24:12Z",
       "content_hash": "ecd2f5ffe9fc43371ab0e382e0957f1ed4c31906439d6a2937fbec275f5dfb5b",
-      "remote_file_id": "files/h9tmnmf0wfk8",
-      "openai_file_id": "files/h9tmnmf0wfk8"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousetoastapidatawithopt-bcfapuj3b9wp",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousetoastapidatawithopt-bcfapuj3b9wp",
+      "chunk_count": 2
     },
     "30310366838803": {
       "slug": "enabling-lock-down-mode-on-touch-screen-devices",
@@ -523,8 +579,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/30310366838803-Enabling-Lock-Down-Mode-on-Touch-Screen-Devices",
       "updated_at": "2026-09-10T09:51:32Z",
       "content_hash": "381517dbf8b8da27c79826664598c4b4b605625d093e3dc3c0eae306b3c19f9d",
-      "remote_file_id": "files/erquutwcsttn",
-      "openai_file_id": "files/erquutwcsttn"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/enablinglockdownmodeontouch-012gnjrlm6lz",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/enablinglockdownmodeontouch-012gnjrlm6lz",
+      "chunk_count": 3
     },
     "30304278652563": {
       "slug": "how-to-use-the-mobile-app-for-remote-control",
@@ -532,8 +589,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/30304278652563-How-to-Use-the-Mobile-App-for-Remote-Control",
       "updated_at": "2026-09-10T09:51:30Z",
       "content_hash": "ad2e47ac27dadd99f4b1d53d9d255a7c7871dfa02a624ee6e2681d0b44739f9f",
-      "remote_file_id": "files/2xic669qoqk5",
-      "openai_file_id": "files/2xic669qoqk5"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethemobileappforremo-w0cf5fq0w352",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethemobileappforremo-w0cf5fq0w352",
+      "chunk_count": 2
     },
     "29792081890323": {
       "slug": "guide-for-creating-content-with-optisigns",
@@ -541,8 +599,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/29792081890323-Guide-for-Creating-Content-with-OptiSigns",
       "updated_at": "2026-09-10T09:51:20Z",
       "content_hash": "d8fef40cdb0b595ccd0526d05f71a13a07a5a172f78bdafe7bc9360d2e41c05d",
-      "remote_file_id": "files/r07h1wpctk5b",
-      "openai_file_id": "files/r07h1wpctk5b"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/guideforcreatingcontentwith-2hqvb3pq9s43",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/guideforcreatingcontentwith-2hqvb3pq9s43",
+      "chunk_count": 3
     },
     "29465595849235": {
       "slug": "list-of-supported-cities-for-weather-wall-city-themes",
@@ -550,8 +609,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/29465595849235-List-of-Supported-Cities-for-Weather-Wall-City-Themes",
       "updated_at": "2026-09-10T09:51:18Z",
       "content_hash": "3e699cfc99eeb60f17c5895776d3285106686cac919f798cc57fa9fd1dcd5e58",
-      "remote_file_id": "files/cfb09e3jel5o",
-      "openai_file_id": "files/cfb09e3jel5o"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/listofsupportedcitiesforwea-55iofp0qdkqi",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/listofsupportedcitiesforwea-55iofp0qdkqi",
+      "chunk_count": 1
     },
     "29238381023123": {
       "slug": "how-to-clear-cache-on-a-brightsign-player",
@@ -559,8 +619,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/29238381023123-How-to-Clear-Cache-on-a-BrightSign-Player",
       "updated_at": "2026-09-10T09:51:13Z",
       "content_hash": "8b03d08eb38e4afb41236ac387a3f1863c3bacdbd8361f9df06f7131f18766f4",
-      "remote_file_id": "files/l3ulsq5uykgz",
-      "openai_file_id": "files/l3ulsq5uykgz"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoclearcacheonabrightsig-5be2abd34h12",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoclearcacheonabrightsig-5be2abd34h12",
+      "chunk_count": 1
     },
     "29232460955539": {
       "slug": "how-to-create-an-attract-screen-for-your-kiosk",
@@ -568,8 +629,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/29232460955539-How-to-Create-an-Attract-Screen-for-Your-Kiosk",
       "updated_at": "2025-09-04T14:01:30Z",
       "content_hash": "c4bef15357411a1a7a0c83b5eda6986ca217699845a8362881b4e1a318fa44c3",
-      "remote_file_id": "files/ilil9f6vymo3",
-      "openai_file_id": "files/ilil9f6vymo3"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocreateanattractscreenf-09kkw6907mtv",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocreateanattractscreenf-09kkw6907mtv",
+      "chunk_count": 2
     },
     "29217646663187": {
       "slug": "how-to-set-up-dynamic-data-mapping-with-optisync",
@@ -577,8 +639,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/29217646663187-How-to-Set-Up-Dynamic-Data-Mapping-with-OptiSync",
       "updated_at": "2026-09-10T09:51:11Z",
       "content_hash": "b834f19780ccff19d4942c530d40ab7bb77f5d1c3dc7b19bd08e90e094d9b5ab",
-      "remote_file_id": "files/k4c9a9jkawv5",
-      "openai_file_id": "files/k4c9a9jkawv5"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtosetupdynamicdatamappin-hpje631f5yzq",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtosetupdynamicdatamappin-hpje631f5yzq",
+      "chunk_count": 6
     },
     "28598173096723": {
       "slug": "how-to-create-and-use-operational-schedules-hdmi-cec-rs-232",
@@ -586,8 +649,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/28598173096723-How-To-Create-and-Use-Operational-Schedules-HDMI-CEC-RS-232",
       "updated_at": "2026-09-11T20:59:10Z",
       "content_hash": "6ee163acdcf86ea817ed1e060313bd9156c6ec627be84909b8d3adaab37e194a",
-      "remote_file_id": "files/3sjgzb3vh4sr",
-      "openai_file_id": "files/3sjgzb3vh4sr"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocreateanduseoperationa-jz3ty9xgiczk",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocreateanduseoperationa-jz3ty9xgiczk",
+      "chunk_count": 3
     },
     "28427819992979": {
       "slug": "performance-stability-issues-on-android-devices-and-best",
@@ -595,8 +659,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/28427819992979-Performance-Stability-issues-on-Android-devices-and-Best-Practices",
       "updated_at": "2026-09-10T09:51:09Z",
       "content_hash": "2f736ce9bc58d13064c85df216611ac2a920e6e5baf853838b55558f87ada4a1",
-      "remote_file_id": "files/2uipy7vop6nk",
-      "openai_file_id": "files/2uipy7vop6nk"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/performancestabilityissueso-zvlpop6o49ol",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/performancestabilityissueso-zvlpop6o49ol",
+      "chunk_count": 2
     },
     "28424138317971": {
       "slug": "samsung-tizen-tvs-troubleshooting-guide",
@@ -604,8 +669,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/28424138317971-Samsung-Tizen-TVs-Troubleshooting-Guide",
       "updated_at": "2026-09-10T09:51:08Z",
       "content_hash": "4ac93ae4abce5a256f52093e870fef366f1292fe07e387bc0d04bc949ba2d5e3",
-      "remote_file_id": "files/ra67ob8r58iq",
-      "openai_file_id": "files/ra67ob8r58iq"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/samsungtizentvstroubleshoot-uxuc24yjd92u",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/samsungtizentvstroubleshoot-uxuc24yjd92u",
+      "chunk_count": 1
     },
     "28421615261971": {
       "slug": "roku-troubleshooting-guide",
@@ -613,8 +679,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/28421615261971-Roku-Troubleshooting-guide",
       "updated_at": "2026-09-10T09:51:05Z",
       "content_hash": "099b1094bd60c471a88afadbe8473f5f4605c53b9bcf71530b57f54881c72dc0",
-      "remote_file_id": "files/7s84bryn9ox1",
-      "openai_file_id": "files/7s84bryn9ox1"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/rokutroubleshootingguide-vj1wv2u8jh6f",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/rokutroubleshootingguide-vj1wv2u8jh6f",
+      "chunk_count": 1
     },
     "28295104605843": {
       "slug": "how-to-create-use-playlists",
@@ -622,8 +689,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/28295104605843-How-to-Create-Use-Playlists",
       "updated_at": "2026-09-10T09:51:04Z",
       "content_hash": "bb107afd1308e62d8f0b149b493c21b0529edc66dd67c125a2c017fafe08ea82",
-      "remote_file_id": "files/8o8o8b46x1k5",
-      "openai_file_id": "files/8o8o8b46x1k5"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocreateuseplaylists-1mjshgzpup2b",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocreateuseplaylists-1mjshgzpup2b",
+      "chunk_count": 2
     },
     "28140190892307": {
       "slug": "how-to-use-qr-overlay-app-in-engage",
@@ -631,8 +699,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/28140190892307-How-to-Use-QR-Overlay-App-in-Engage",
       "updated_at": "2026-09-10T21:35:58Z",
       "content_hash": "2fd19dd5f28cc437415c44c9ec8027d45a886ac9b084388aad620076624595b1",
-      "remote_file_id": "files/d3jaqg3ceeu0",
-      "openai_file_id": "files/d3jaqg3ceeu0"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtouseqroverlayappinengag-xjh3wabt3edl",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtouseqroverlayappinengag-xjh3wabt3edl",
+      "chunk_count": 2
     },
     "28115946505107": {
       "slug": "how-to-change-engage-kiosk-style-preferences",
@@ -640,8 +709,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/28115946505107-How-to-Change-Engage-Kiosk-Style-Preferences",
       "updated_at": "2026-09-10T21:01:31Z",
       "content_hash": "bc418358efc03f7b5d9ed409a6c38f376ad5e33e0115492e35f8938023d75eae",
-      "remote_file_id": "files/u58tkkvyddo1",
-      "openai_file_id": "files/u58tkkvyddo1"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtochangeengagekioskstyle-qv7bfhleknup",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtochangeengagekioskstyle-qv7bfhleknup",
+      "chunk_count": 1
     },
     "27690296225555": {
       "slug": "ai-camera-app-quick-start",
@@ -649,8 +719,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/27690296225555-AI-Camera-App-Quick-Start",
       "updated_at": "2026-09-10T09:50:56Z",
       "content_hash": "27fd8c2cb506719c679dfc175fcba44001937b753494d180ccbc13ae5807c4b9",
-      "remote_file_id": "files/sjez15sf01tg",
-      "openai_file_id": "files/sjez15sf01tg"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/aicameraappquickstart-yktj68qs6tlk",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/aicameraappquickstart-yktj68qs6tlk",
+      "chunk_count": 2
     },
     "27463953562899": {
       "slug": "amazon-tv-firestick-troubleshooting-guide",
@@ -672,8 +743,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/27458261258387-Move-Screens-or-Devices-from-One-Account-to-Another",
       "updated_at": "2026-09-10T09:50:47Z",
       "content_hash": "4d563de5ac24fc3a09df48da14ec051aa4ebd1659bbf7cd4041499fb2e354894",
-      "remote_file_id": "files/wvk54qrpz7xs",
-      "openai_file_id": "files/wvk54qrpz7xs"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/movescreensordevicesfromone-fgq6svxewxl0",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/movescreensordevicesfromone-fgq6svxewxl0",
+      "chunk_count": 1
     },
     "27356288211859": {
       "slug": "how-to-use-icloud-calendar-with-optisigns",
@@ -681,8 +753,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/27356288211859-How-to-Use-iCloud-Calendar-with-OptiSigns",
       "updated_at": "2026-10-01T19:37:52Z",
       "content_hash": "ac71dd3f80c2d0b1963fc96922cc93326e49b8a7d6066915d6e46fc1b44b3407",
-      "remote_file_id": "files/qbfubjyxo33t",
-      "openai_file_id": "files/qbfubjyxo33t"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtouseicloudcalendarwitho-u7tqa4w5umny",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtouseicloudcalendarwitho-u7tqa4w5umny",
+      "chunk_count": 2
     },
     "27267311796243": {
       "slug": "optistick",
@@ -690,8 +763,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/27267311796243-OptiStick",
       "updated_at": "2026-09-13T02:35:58Z",
       "content_hash": "4d10a037e2799f0ae5af6b04119cf99a67224d3f78214d5ce9887f20a51d7e99",
-      "remote_file_id": "files/m8y97crznghi",
-      "openai_file_id": "files/m8y97crznghi"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/optistick-h6ker12t9y1x",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/optistick-h6ker12t9y1x",
+      "chunk_count": 2
     },
     "25273043501587": {
       "slug": "how-to-lockdown-ipad-single-app-with-guided-accessibility",
@@ -699,8 +773,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/25273043501587-How-to-Lockdown-iPad-Single-App-with-Guided-Accessibility",
       "updated_at": "2026-09-10T09:50:40Z",
       "content_hash": "41c0c6517dd2f8846d0fd93e82e6b5a3572cc368c3ed1ec8b90a8d24b8972451",
-      "remote_file_id": "files/v0yrey8974pi",
-      "openai_file_id": "files/v0yrey8974pi"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtolockdownipadsingleappw-iowylh33stul",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtolockdownipadsingleappw-iowylh33stul",
+      "chunk_count": 1
     },
     "25127398699667": {
       "slug": "how-to-add-a-qr-code-in-designs-using-optisigns-designer",
@@ -708,8 +783,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/25127398699667-How-to-add-a-QR-Code-in-designs-using-OptiSigns-Designer",
       "updated_at": "2026-09-10T21:45:48Z",
       "content_hash": "d332d200dd02b9f113b65c9e53881809d90d8aef05371e16b7e47c104d5a394c",
-      "remote_file_id": "files/5ovkpaa4wn1y",
-      "openai_file_id": "files/5ovkpaa4wn1y"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoaddaqrcodeindesignsusi-hfxcd9vxrzea",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoaddaqrcodeindesignsusi-hfxcd9vxrzea",
+      "chunk_count": 1
     },
     "24338756617747": {
       "slug": "feeds-and-how-to-use-them",
@@ -717,8 +793,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/24338756617747-Feeds-and-How-to-Use-Them",
       "updated_at": "2026-09-10T09:50:35Z",
       "content_hash": "23794590940fb8f87f50a3d9176380db0f18b56e3a97938d152d200262da6b7e",
-      "remote_file_id": "files/19majtowejan",
-      "openai_file_id": "files/19majtowejan"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/feedsandhowtousethem-k273ql9n0mc3",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/feedsandhowtousethem-k273ql9n0mc3",
+      "chunk_count": 2
     },
     "23629657318547": {
       "slug": "how-to-get-google-review-link",
@@ -726,8 +803,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/23629657318547-How-to-get-Google-Review-link",
       "updated_at": "2025-09-04T16:54:55Z",
       "content_hash": "c30b8e5809324b02000b698c465fc01f0ea4964d1462b460edd07baace50ab75",
-      "remote_file_id": "files/4zqdiybqcj56",
-      "openai_file_id": "files/4zqdiybqcj56"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtogetgooglereviewlink-8tsks8q974au",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtogetgooglereviewlink-8tsks8q974au",
+      "chunk_count": 1
     },
     "23566927217939": {
       "slug": "how-to-use-check-in-app-with-sms-follow-up",
@@ -735,8 +813,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/23566927217939-How-to-use-Check-in-app-with-SMS-follow-up",
       "updated_at": "2026-09-28T22:24:04Z",
       "content_hash": "e845cf2e3e73d52a7ac8d4f798f216975072171e358d1c142247f8992aa5f1df",
-      "remote_file_id": "files/pkppo1124hcz",
-      "openai_file_id": "files/pkppo1124hcz"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousecheckinappwithsmsfo-8ezlr5j89kdd",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousecheckinappwithsmsfo-8ezlr5j89kdd",
+      "chunk_count": 3
     },
     "23565267463315": {
       "slug": "engage-plan-faqs",
@@ -744,8 +823,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/23565267463315-Engage-Plan-FAQs",
       "updated_at": "2026-09-08T04:06:22Z",
       "content_hash": "a67448b3a71e1fbc00b39b5eee2fa312da479b7a15fedd8176af105bf37d4202",
-      "remote_file_id": "files/0gm3w68ru27o",
-      "openai_file_id": "files/0gm3w68ru27o"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/engageplanfaqs-c332zcka4776",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/engageplanfaqs-c332zcka4776",
+      "chunk_count": 1
     },
     "23274673797139": {
       "slug": "how-to-enable-auto-start-on-fireos-8-devices-like-amazon-tv",
@@ -753,8 +833,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/23274673797139-How-to-enable-auto-start-on-FireOS-8-devices-like-Amazon-Fire-TV-Stick-4K-Gen-2-2023-model",
       "updated_at": "2026-09-10T09:50:28Z",
       "content_hash": "926aa0ab1773ae862bd21d6fcd48a68196588268539a35a1c7ea879920f092a1",
-      "remote_file_id": "files/tkv6ezapouvx",
-      "openai_file_id": "files/tkv6ezapouvx"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoenableautostartonfireo-uvx6l189ng1r",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoenableautostartonfireo-uvx6l189ng1r",
+      "chunk_count": 2
     },
     "23030445716883": {
       "slug": "how-to-setup-aericast-meet-wireless-video-conferencing",
@@ -762,8 +843,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/23030445716883-How-to-setup-AeriCast-Meet-Wireless-Video-Conferencing",
       "updated_at": "2026-09-11T17:16:28Z",
       "content_hash": "1ba313abf15386d853bb8d5cf3f8e258e1c64edd318da95668032ec8592ceddc",
-      "remote_file_id": "files/e3ak9yadwxsk",
-      "openai_file_id": "files/e3ak9yadwxsk"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtosetupaericastmeetwirel-picbzxjoycb3",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtosetupaericastmeetwirel-picbzxjoycb3",
+      "chunk_count": 2
     },
     "22875592994195": {
       "slug": "how-to-integrate-api-and-publish-api-data-via-optisync",
@@ -771,8 +853,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/22875592994195-How-to-Integrate-API-and-Publish-API-Data-via-OptiSync",
       "updated_at": "2026-09-10T09:50:23Z",
       "content_hash": "0e8b3ed3cf55b85e9982f7836ba4f8da85c49e09d98899898b3fa7714f7c5ba7",
-      "remote_file_id": "files/ecpo8eo5yn27",
-      "openai_file_id": "files/ecpo8eo5yn27"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtointegrateapiandpublish-x8vot1ragdr5",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtointegrateapiandpublish-x8vot1ragdr5",
+      "chunk_count": 6
     },
     "22474034993043": {
       "slug": "advanced-playlist-item-playback-control-campaign-management",
@@ -780,8 +863,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/22474034993043-Advanced-Playlist-Item-Playback-Control-Campaign-Management",
       "updated_at": "2026-09-10T09:50:21Z",
       "content_hash": "166eef16358d24329077863967b5bfa98070b3c13f002b3e111a7787be7cfd55",
-      "remote_file_id": "files/ou3edeyxyvjr",
-      "openai_file_id": "files/ou3edeyxyvjr"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/advancedplaylistitemplaybac-mg5v1ns4uaxj",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/advancedplaylistitemplaybac-mg5v1ns4uaxj",
+      "chunk_count": 3
     },
     "21708242980755": {
       "slug": "sharing-playlists-and-folders-with-external-users",
@@ -789,8 +873,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/21708242980755-Sharing-Playlists-and-Folders-with-External-Users",
       "updated_at": "2026-09-11T17:02:25Z",
       "content_hash": "e0e9fdcad34305faa843be6a25f0777f6bd6c55d99bb14a465c9c911b084bcf8",
-      "remote_file_id": "files/dss66h45kpft",
-      "openai_file_id": "files/dss66h45kpft"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/sharingplaylistsandfoldersw-tp4f77hlpej7",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/sharingplaylistsandfoldersw-tp4f77hlpej7",
+      "chunk_count": 3
     },
     "20879903340947": {
       "slug": "how-to-use-content-tags-in-the-playlist",
@@ -798,8 +883,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/20879903340947-How-to-Use-Content-Tags-in-The-Playlist",
       "updated_at": "2026-09-14T02:42:33Z",
       "content_hash": "677a6efa867ff78d07afefe2c00ef86de293106150f39da4ca3ddad7677b7b7c",
-      "remote_file_id": "files/r7sgck1qnr32",
-      "openai_file_id": "files/r7sgck1qnr32"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousecontenttagsinthepla-l98mw5ga6ran",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousecontenttagsinthepla-l98mw5ga6ran",
+      "chunk_count": 3
     },
     "20750060900883": {
       "slug": "your-facebook-page-doesn-t-show-in-the-dropdown-list",
@@ -807,8 +893,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/20750060900883-Your-Facebook-Page-Doesn-t-Show-in-The-Dropdown-List",
       "updated_at": "2026-09-10T09:50:14Z",
       "content_hash": "6a7057fd773f21f25e800733da68237a000963ba4f7ff378061bf93d56e35374",
-      "remote_file_id": "files/cgh8bi4zg09c",
-      "openai_file_id": "files/cgh8bi4zg09c"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/yourfacebookpagedoesntshowi-83td44zj0pa7",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/yourfacebookpagedoesntshowi-83td44zj0pa7",
+      "chunk_count": 1
     },
     "20428606424723": {
       "slug": "how-to-use-coordinate-based-positioning-and-sizing-of-in",
@@ -816,8 +903,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/20428606424723-How-to-Use-Coordinate-Based-Positioning-and-Sizing-of-Elements-in-OptiSigns-Designer",
       "updated_at": "2026-09-10T09:50:08Z",
       "content_hash": "3610c532fb4b4fd446921848d624ef44ef8abb6777ae73e205c8a23865dd31bb",
-      "remote_file_id": "files/um1g3bj235ye",
-      "openai_file_id": "files/um1g3bj235ye"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousecoordinatebasedposi-orpq2k4sawie",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousecoordinatebasedposi-orpq2k4sawie",
+      "chunk_count": 1
     },
     "20425113117459": {
       "slug": "navigating-through-optisigns-template-library",
@@ -825,8 +913,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/20425113117459-Navigating-Through-OptiSigns-Template-Library",
       "updated_at": "2026-09-04T09:52:58Z",
       "content_hash": "d742288dd873cb6396de19aae2c5e1a85cd4e92105f9cdb3e668ecc0bbc4f82d",
-      "remote_file_id": "files/f20zik8rlqmi",
-      "openai_file_id": "files/f20zik8rlqmi"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/navigatingthroughoptisignst-21z4anzbz4rc",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/navigatingthroughoptisignst-21z4anzbz4rc",
+      "chunk_count": 2
     },
     "20153471319187": {
       "slug": "external-storage-on-optisigns-devices",
@@ -834,8 +923,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/20153471319187-External-Storage-on-OptiSigns-Devices",
       "updated_at": "2026-09-10T09:50:04Z",
       "content_hash": "2654fe0b8a1e109e7bd6266da762d52f83d17f659fa6129cbe965a2bfc122fa5",
-      "remote_file_id": "files/uzp0lsgfbmhu",
-      "openai_file_id": "files/uzp0lsgfbmhu"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/externalstorageonoptisignsd-g5rlhvpuawxq",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/externalstorageonoptisignsd-g5rlhvpuawxq",
+      "chunk_count": 1
     },
     "20062273670163": {
       "slug": "how-to-control-and-schedule-playlist-items",
@@ -843,8 +933,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/20062273670163-How-to-Control-and-Schedule-Playlist-Items",
       "updated_at": "2026-09-10T09:50:02Z",
       "content_hash": "a987a22e948d30639810a46b9cd9499c7a04db235c48aeb6075ddf6f20b94c07",
-      "remote_file_id": "files/8xtmvzuvsqsg",
-      "openai_file_id": "files/8xtmvzuvsqsg"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocontrolandscheduleplay-55636xduxuly",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocontrolandscheduleplay-55636xduxuly",
+      "chunk_count": 1
     },
     "19589190970771": {
       "slug": "how-to-use-secured-dashboard-app",
@@ -852,8 +943,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/19589190970771-How-to-use-Secured-Dashboard-App",
       "updated_at": "2026-09-10T09:50:01Z",
       "content_hash": "7fc9a6f7774b450bed48c3f5132966198e382828fd844927f682c3d03c0dc118",
-      "remote_file_id": "files/7r7uyayg4u5n",
-      "openai_file_id": "files/7r7uyayg4u5n"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousesecureddashboardapp-vbf5kczh7fzn",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousesecureddashboardapp-vbf5kczh7fzn",
+      "chunk_count": 2
     },
     "19171222981523": {
       "slug": "how-to-use-the-viva-engage-app-formerly-yammer-on-optisigns",
@@ -861,8 +953,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/19171222981523-How-to-Use-the-Viva-Engage-app-formerly-Yammer-on-OptiSigns",
       "updated_at": "2026-09-24T08:59:57Z",
       "content_hash": "447ff356db890606363d2a072ef581ce9a86eeee4995befb4f9dfad6239d2fc6",
-      "remote_file_id": "files/07gvs85cwmra",
-      "openai_file_id": "files/07gvs85cwmra"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethevivaengageappfor-qt7kfbquylsh",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethevivaengageappfor-qt7kfbquylsh",
+      "chunk_count": 2
     },
     "18988049363859": {
       "slug": "push-contents-to-your-screens",
@@ -870,8 +963,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/18988049363859-Push-Contents-to-your-Screens",
       "updated_at": "2026-09-10T09:49:59Z",
       "content_hash": "6aeb6d51d302775fb4df99c045a830e81adc5e45033b3fea57ebead7f0247dd4",
-      "remote_file_id": "files/urjdljz4txed",
-      "openai_file_id": "files/urjdljz4txed"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/pushcontentstoyourscreens-bilcb28ttms2",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/pushcontentstoyourscreens-bilcb28ttms2",
+      "chunk_count": 2
     },
     "18823504383891": {
       "slug": "optisigns-getting-started-guide",
@@ -879,8 +973,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/18823504383891-OptiSigns-Getting-Started-Guide",
       "updated_at": "2026-08-21T05:37:19Z",
       "content_hash": "5b35088b293ed4836d8165320d607f8f81b5db184e6a3b7fead4452b9e463633",
-      "remote_file_id": "files/e0hi38r4shty",
-      "openai_file_id": "files/e0hi38r4shty"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/optisignsgettingstartedguid-fj371d0bfom8",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/optisignsgettingstartedguid-fj371d0bfom8",
+      "chunk_count": 2
     },
     "18470994953363": {
       "slug": "how-to-keep-optisigns-running-on-fire-stick",
@@ -888,8 +983,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/18470994953363-How-to-keep-OptiSigns-running-on-Fire-Stick",
       "updated_at": "2026-09-10T09:49:53Z",
       "content_hash": "6ee104f6cd8a24bbc42774f35c57ebc435d04e3779da56b829e84f683ea7cc73",
-      "remote_file_id": "files/vh6uylh91zih",
-      "openai_file_id": "files/vh6uylh91zih"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtokeepoptisignsrunningon-2pxug527qk96",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtokeepoptisignsrunningon-2pxug527qk96",
+      "chunk_count": 1
     },
     "18399492388371": {
       "slug": "how-to-customize-the-thumbnail-of-files-assets-and-folders",
@@ -897,8 +993,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/18399492388371-How-to-Customize-the-Thumbnail-of-Files-Assets-and-Folders",
       "updated_at": "2026-09-10T09:49:51Z",
       "content_hash": "78894a8edaa4a2f21b35b151d71f1e7cff569431e0789f5ba5df41dca9c09ba3",
-      "remote_file_id": "files/bufjzq9nxq25",
-      "openai_file_id": "files/bufjzq9nxq25"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocustomizethethumbnailo-f6nq3a92oc24",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocustomizethethumbnailo-f6nq3a92oc24",
+      "chunk_count": 1
     },
     "18381542133779": {
       "slug": "how-to-configure-multi-factor-authentication-with-your",
@@ -906,8 +1003,9 @@
       "url": "https://support.optisigns.com/hc/en-us/articles/18381542133779-How-to-Configure-Multi-Factor-Authentication-with-your-OptiSigns-account",
       "updated_at": "2026-09-10T09:49:48Z",
       "content_hash": "f6215457971cf344f28ff67a4cf1b66f719cc7485753f477f1a69433e8954f98",
-      "remote_file_id": "files/jroyz8yji7ly",
-      "openai_file_id": "files/jroyz8yji7ly"
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoconfiguremultifactorau-nm1eomkhc2sa",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoconfiguremultifactorau-nm1eomkhc2sa",
+      "chunk_count": 1
     },
     "17882306279315": {
       "slug": "samsung-smart-signage-platform-sssp-supported-model-list",
@@ -934,5 +1032,6 @@
       "openai_file_id": "files/zbifgxg37917"
     }
   },
-  "provider": "gemini"
+  "provider": "gemini",
+  "file_search_store_name": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl"
 }

@@ -1,94 +1,65 @@
-﻿"""Module for AI Assistant integration, vector store / knowledge base synchronization."""
+"""Module for AI Assistant integration and vector store / knowledge base synchronization.
+
+Two interchangeable providers are supported:
+
+* Gemini (default): Google **File Search Store** — Gemini's managed vector store.
+  Documents are uploaded via API, chunked + embedded server-side using our
+  chunking config, and retrieved through the ``file_search`` tool at query time.
+* OpenAI: **Vector Store** + Responses API ``file_search`` tool.
+
+Both stores are persistent, so unchanged (SKIPPED) articles stay indexed across
+daily runs and only the delta is (re-)uploaded.
+"""
 import abc
 import logging
+import math
 import time
 from dataclasses import dataclass
-from pathlib import Path
-from typing import Any
+from typing import Any, Callable
 
 from src.config import (
     AI_PROVIDER,
     GEMINI_API_KEY,
     GEMINI_MODEL,
+    GEMINI_FILE_SEARCH_STORE,
     OPENAI_API_KEY,
     OPENAI_MODEL,
-    ASSISTANT_NAME,
+    OPENAI_VECTOR_STORE_ID,
+    VECTOR_STORE_DISPLAY_NAME,
     SYSTEM_PROMPT,
     CHUNK_SIZE_TOKENS,
     CHUNK_OVERLAP_TOKENS,
 )
-from src.delta import DeltaSummary, update_state_entry
+from src.delta import ArticleDelta, DeltaSummary, update_state_entry
 
 logger = logging.getLogger(__name__)
 
-# Rule of thumb: 1 token ≈ 4 English characters
-CHARS_PER_TOKEN = 4
+# Max seconds to wait for server-side chunking/embedding of a single batch.
+INDEXING_TIMEOUT_SEC = 600
+POLL_INTERVAL_SEC = 2
 
 
-def _split_into_chunks(
+def estimate_chunks(
     text: str,
     chunk_size: int = CHUNK_SIZE_TOKENS,
     overlap: int = CHUNK_OVERLAP_TOKENS,
-) -> list[str]:
+) -> int:
     """
-    Split markdown text into overlapping, paragraph-aware chunks.
+    Estimate how many chunks the vector store will produce for ``text``.
 
-    Strategy:
-    - Compute character budget from token estimates (CHARS_PER_TOKEN = 4).
-    - Prefer splitting on double-newlines (paragraph boundaries) to avoid
-      cutting mid-sentence or mid-step in procedural documentation.
-    - Apply overlap so that context from the end of one chunk bleeds into
-      the start of the next, preserving referential continuity.
-
-    Args:
-        text:       Full article markdown content.
-        chunk_size: Target chunk size in tokens (default: CHUNK_SIZE_TOKENS).
-        overlap:    Overlap between consecutive chunks in tokens (default: CHUNK_OVERLAP_TOKENS).
-
-    Returns:
-        List of non-empty text chunks.
+    Mirrors the server-side *white-space* chunker we configure on upload
+    (``max_tokens_per_chunk`` / ``max_overlap_tokens``): tokens are
+    whitespace-delimited words and consecutive windows advance by
+    ``chunk_size - overlap`` tokens. Neither API returns per-document chunk
+    counts, so this is used for the "chunks embedded" log line.
     """
-    if not text.strip():
-        return []
-
-    chunk_size_chars = chunk_size * CHARS_PER_TOKEN
-    overlap_chars = overlap * CHARS_PER_TOKEN
-
-    # Short content fits in a single chunk
-    if len(text) <= chunk_size_chars:
-        return [text.strip()]
-
-    chunks: list[str] = []
-    start = 0
-
-    while start < len(text):
-        end = min(start + chunk_size_chars, len(text))
-        chunk = text[start:end]
-
-        # Prefer to break on a paragraph boundary (double newline) to
-        # avoid cutting mid-sentence in step-by-step guides.
-        if end < len(text):
-            last_para = chunk.rfind("\n\n")
-            if last_para > chunk_size_chars // 3:
-                end = start + last_para + 2
-                chunk = text[start:end]
-
-        stripped = chunk.strip()
-        if stripped:
-            chunks.append(stripped)
-
-        # Advance with overlap; safety guard ensures we always move forward.
-        next_start = end - overlap_chars
-        if next_start <= start:
-            next_start = end
-        start = next_start
-
-    return chunks
-
-
-def estimate_chunks(text: str, chunk_size: int = CHUNK_SIZE_TOKENS, overlap: int = CHUNK_OVERLAP_TOKENS) -> int:
-    """Count the number of chunks produced by _split_into_chunks."""
-    return len(_split_into_chunks(text, chunk_size=chunk_size, overlap=overlap))
+    n_tokens = len(text.split())
+    if n_tokens == 0:
+        return 0
+    if n_tokens <= chunk_size:
+        return 1
+    stride = max(chunk_size - overlap, 1)
+    return 1 + math.ceil((n_tokens - chunk_size) / stride)
 
 
 @dataclass
@@ -97,16 +68,22 @@ class SyncResult:
     added_count: int = 0
     updated_count: int = 0
     skipped_count: int = 0
-    total_remote_files: int = 0
-    total_chunks: int = 0
+    reindexed_count: int = 0      # previously-synced docs re-uploaded because the store was (re)created
+    failed_count: int = 0
+    embedded_files: int = 0       # files uploaded + embedded in THIS run
+    embedded_chunks: int = 0      # chunks embedded in THIS run
+    total_remote_files: int = 0   # documents currently in the store
+    total_chunks: int = 0         # chunks currently in the store
 
     def to_log_string(self) -> str:
         return (
             f"[SYNC SUMMARY] Added: {self.added_count} | "
             f"Updated: {self.updated_count} | "
             f"Skipped: {self.skipped_count} | "
-            f"Total Active Files: {self.total_remote_files} | "
-            f"Total Estimated Chunks: {self.total_chunks}"
+            f"Re-indexed: {self.reindexed_count} | "
+            f"Failed: {self.failed_count} | "
+            f"Embedded this run: {self.embedded_files} files / {self.embedded_chunks} chunks | "
+            f"Store total: {self.total_remote_files} files / {self.total_chunks} chunks"
         )
 
 
@@ -115,27 +92,63 @@ class BaseAssistantProvider(abc.ABC):
 
     @abc.abstractmethod
     def sync_delta(self, delta_summary: DeltaSummary, state: dict[str, Any]) -> SyncResult:
-        """Upload delta items and update state."""
-        pass
+        """Upload delta items to the vector store and update state."""
 
     @abc.abstractmethod
     def ask_question(self, query: str, state: dict[str, Any]) -> str:
-        """Query the assistant grounded on the uploaded knowledge base."""
-        pass
+        """Query the assistant grounded on the vector store."""
+
+    # ------------------------------------------------------------------
+    # Shared helpers
+    # ------------------------------------------------------------------
+
+    @staticmethod
+    def _plan_uploads(
+        delta_summary: DeltaSummary, in_store: Callable[[str | None], bool]
+    ) -> tuple[list[tuple[ArticleDelta, str]], int]:
+        """
+        Decide which articles to upload.
+
+        Returns ``(jobs, skipped_count)`` where ``jobs`` is a list of
+        ``(item, action)`` with action in {"ADDED", "UPDATED", "REINDEXED"}.
+        An unchanged (SKIPPED) article whose document is not in the current
+        store (store recreated, or legacy state) is re-uploaded.
+        """
+        jobs: list[tuple[ArticleDelta, str]] = []
+        jobs += [(i, "UPDATED") for i in delta_summary.updated]
+        jobs += [(i, "ADDED") for i in delta_summary.added]
+        missing = [i for i in delta_summary.skipped if not in_store(i.old_remote_file_id)]
+        if missing:
+            logger.warning("%d unchanged articles are not in the current store -> re-indexing.", len(missing))
+            jobs += [(i, "REINDEXED") for i in missing]
+        return jobs, delta_summary.skipped_count - len(missing)
+
+    @staticmethod
+    def _tally(result: SyncResult, action: str) -> None:
+        if action == "ADDED":
+            result.added_count += 1
+        elif action == "UPDATED":
+            result.updated_count += 1
+        else:
+            result.reindexed_count += 1
+
+    @staticmethod
+    def _store_totals(result: SyncResult, state: dict[str, Any], in_store: Callable[[str | None], bool]) -> None:
+        live = [a for a in state.get("articles", {}).values() if in_store(a.get("remote_file_id"))]
+        result.total_remote_files = len(live)
+        result.total_chunks = sum(int(a.get("chunk_count", 0)) for a in live)
 
 
 class GeminiAssistantProvider(BaseAssistantProvider):
     """
-    Google Gemini Knowledge Base provider using the official google-genai SDK.
+    Google Gemini provider backed by a **File Search Store** (managed vector store).
 
-    Ingestion strategy:
-    - Each article is split into token-estimated, paragraph-aware chunks
-      (default: 800-token chunks with 100-token overlap).
-    - Each chunk is uploaded as an individual file to the Gemini File API,
-      giving the model focused, size-controlled context windows.
-    - Gemini performs in-context grounding: files are passed directly into the
-      model context window at query time rather than through an embedding index.
-      This is well-suited for factual retrieval over structured support docs.
+    * ``upload_to_file_search_store`` uploads each article's Markdown file; Gemini
+      chunks it with our white-space chunking config (800 tokens / 100 overlap),
+      embeds the chunks and indexes them. Documents persist until deleted.
+    * Each document carries ``article_id`` / ``url`` custom metadata.
+    * ``ask_question`` calls ``generate_content`` with the ``file_search`` tool so
+      retrieval is semantic (embedding search), not keyword-based.
     """
 
     def __init__(self, api_key: str | None = None, model_name: str | None = None):
@@ -147,68 +160,85 @@ class GeminiAssistantProvider(BaseAssistantProvider):
         self.model_name = model_name or GEMINI_MODEL
 
     # ------------------------------------------------------------------
-    # Chunk upload / delete helpers
+    # Store management
     # ------------------------------------------------------------------
 
-    def upload_chunks(self, content: str, slug: str, article_dir: Path) -> list[str]:
+    def ensure_store(self, state: dict[str, Any]) -> bool:
         """
-        Split article content into chunks and upload each to Gemini File API.
+        Make sure a File Search Store exists and its name is recorded in state.
 
-        Args:
-            content:     Full article markdown text.
-            slug:        Article slug used for chunk file naming.
-            article_dir: Directory where per-chunk files are written before upload.
-
-        Returns:
-            List of remote Gemini file IDs (one per chunk).
+        Returns True if a NEW store was created (caller must re-index everything).
         """
-        from google.genai import types
+        name = state.get("file_search_store_name") or GEMINI_FILE_SEARCH_STORE
+        if name:
+            try:
+                self.client.file_search_stores.get(name=name)
+                state["file_search_store_name"] = name
+                logger.info("Using existing File Search Store: %s", name)
+                return False
+            except Exception as exc:
+                logger.warning("File Search Store %s unavailable (%s); creating a new one.", name, exc)
 
-        article_dir.mkdir(parents=True, exist_ok=True)
-        chunks = _split_into_chunks(content)
-        if not chunks:
-            logger.warning("No chunks generated for '%s' — skipping upload.", slug)
-            return []
+        store = self.client.file_search_stores.create(
+            config={"display_name": VECTOR_STORE_DISPLAY_NAME}
+        )
+        state["file_search_store_name"] = store.name
+        logger.info("Created File Search Store: %s", store.name)
+        return True
 
-        chunk_file_ids: list[str] = []
-
-        for i, chunk_text in enumerate(chunks):
-            chunk_name = f"{slug}-chunk-{i:03d}"
-            chunk_path = article_dir / f"{chunk_name}.md"
-            chunk_path.write_text(chunk_text, encoding="utf-8")
-
-            config = types.UploadFileConfig(
-                mime_type="text/plain",
-                display_name=chunk_name,
-            )
-            uploaded = self.client.files.upload(file=chunk_path, config=config)
-            chunk_file_ids.append(uploaded.name)
-            logger.info(
-                "Uploaded chunk %d/%d for '%s' -> Remote ID: %s",
-                i + 1, len(chunks), slug, uploaded.name,
-            )
-            time.sleep(0.2)  # Gentle rate-limit throttle
-
-        return chunk_file_ids
-
-    def delete_chunks(self, chunk_file_ids: list[str]) -> None:
-        """Delete all chunk files for an article from Gemini File API."""
-        for fid in chunk_file_ids:
-            self._delete_file(fid)
-
-    def _delete_file(self, remote_file_id: str) -> bool:
-        """Delete a single file from Gemini File API."""
+    def delete_document(self, document_name: str) -> bool:
+        """Delete a document (and all its chunks) from the File Search Store."""
         try:
-            logger.info("Deleting obsolete Gemini file: %s", remote_file_id)
-            self.client.files.delete(name=remote_file_id)
+            self.client.file_search_stores.documents.delete(
+                name=document_name, config={"force": True}
+            )
+            logger.info("Deleted obsolete document: %s", document_name)
             return True
         except Exception as exc:
-            logger.warning("Failed to delete remote file %s: %s", remote_file_id, exc)
+            logger.warning("Failed to delete document %s: %s", document_name, exc)
             return False
 
-    # Keep old public name for backward compatibility with any external callers.
-    def delete_file(self, remote_file_id: str) -> bool:
-        return self._delete_file(remote_file_id)
+    def _start_upload(self, item: ArticleDelta, store_name: str) -> Any:
+        """Kick off an async upload+index operation for one article."""
+        from google.genai import types
+
+        config = types.UploadToFileSearchStoreConfig(
+            display_name=item.slug,
+            mime_type="text/markdown",
+            custom_metadata=[
+                types.CustomMetadata(key="article_id", numeric_value=float(item.article_id)),
+                types.CustomMetadata(key="url", string_value=item.url),
+            ],
+            chunking_config=types.ChunkingConfig(
+                white_space_config=types.WhiteSpaceConfig(
+                    max_tokens_per_chunk=CHUNK_SIZE_TOKENS,
+                    max_overlap_tokens=CHUNK_OVERLAP_TOKENS,
+                )
+            ),
+        )
+        return self.client.file_search_stores.upload_to_file_search_store(
+            file_search_store_name=store_name,
+            file=str(item.file_path),
+            config=config,
+        )
+
+    def _wait_for(self, operations: list[Any]) -> list[Any]:
+        """Poll a batch of long-running indexing operations until all are done."""
+        deadline = time.monotonic() + INDEXING_TIMEOUT_SEC
+        ops = list(operations)
+        while True:
+            pending = [i for i, op in enumerate(ops) if not op.done]
+            if not pending:
+                return ops
+            if time.monotonic() > deadline:
+                logger.error("Timed out waiting for %d indexing operations.", len(pending))
+                return ops
+            time.sleep(POLL_INTERVAL_SEC)
+            for i in pending:
+                try:
+                    ops[i] = self.client.operations.get(ops[i])
+                except Exception as exc:
+                    logger.warning("Polling operation failed: %s", exc)
 
     # ------------------------------------------------------------------
     # sync_delta
@@ -216,43 +246,55 @@ class GeminiAssistantProvider(BaseAssistantProvider):
 
     def sync_delta(self, delta_summary: DeltaSummary, state: dict[str, Any]) -> SyncResult:
         """
-        Sync delta articles with Gemini File API using chunk-based uploading.
+        Upload only the delta to the File Search Store.
 
-        For UPDATED articles: delete obsolete chunks, upload new chunks.
-        For ADDED articles: upload chunks fresh.
-        For SKIPPED articles: no API calls needed.
+        * ADDED   -> upload new document.
+        * UPDATED -> upload new version, then delete the old document.
+        * SKIPPED -> no API calls (document already indexed and persistent).
         """
         state["provider"] = "gemini"
-        result = SyncResult(skipped_count=delta_summary.skipped_count)
+        self.ensure_store(state)
+        store_name = state["file_search_store_name"]
 
-        # 1. Handle UPDATED articles
-        for item in delta_summary.updated:
-            old_ids = item.old_chunk_file_ids or (
-                [item.old_remote_file_id] if item.old_remote_file_id else []
-            )
-            if old_ids:
-                self.delete_chunks(old_ids)
+        def in_store(doc: str | None) -> bool:
+            return bool(doc) and doc.startswith(f"{store_name}/documents/")
 
-            chunk_ids = self.upload_chunks(item.content, item.slug, item.file_path.parent)
-            update_state_entry(state, item, chunk_file_ids=chunk_ids)
-            result.updated_count += 1
+        jobs, skipped = self._plan_uploads(delta_summary, in_store)
+        result = SyncResult(skipped_count=skipped)
 
-        # 2. Handle ADDED articles
-        for item in delta_summary.added:
-            chunk_ids = self.upload_chunks(item.content, item.slug, item.file_path.parent)
-            update_state_entry(state, item, chunk_file_ids=chunk_ids)
-            result.added_count += 1
+        # Fire uploads in batches, then poll — far faster than upload+wait one by one.
+        batch_size = 20
+        for start in range(0, len(jobs), batch_size):
+            batch = jobs[start:start + batch_size]
+            started: list[tuple[ArticleDelta, str, Any]] = []
+            for item, action in batch:
+                try:
+                    started.append((item, action, self._start_upload(item, store_name)))
+                except Exception as exc:
+                    logger.error("Upload failed for '%s': %s", item.slug, exc)
+                    result.failed_count += 1
 
-        # 3. Count active articles and total indexed chunks
-        active_articles = state.get("articles", {})
-        result.total_remote_files = sum(
-            1 for a in active_articles.values() if a.get("chunk_file_ids")
-        )
-        result.total_chunks = sum(
-            estimate_chunks(item.content)
-            for item in delta_summary.added + delta_summary.updated + delta_summary.skipped
-        )
+            finished = self._wait_for([op for _, _, op in started])
 
+            for (item, action, _), op in zip(started, finished):
+                doc_name = getattr(getattr(op, "response", None), "document_name", None)
+                if not op.done or op.error or not doc_name:
+                    logger.error("Indexing failed for '%s': %s", item.slug, op.error or "timeout")
+                    result.failed_count += 1
+                    continue  # state untouched -> retried on next run
+
+                # Old doc is removed only after the new one is safely indexed.
+                if action == "UPDATED" and in_store(item.old_remote_file_id):
+                    self.delete_document(item.old_remote_file_id)
+
+                chunks = estimate_chunks(item.content)
+                update_state_entry(state, item, remote_file_id=doc_name, chunk_count=chunks)
+                self._tally(result, action)
+                result.embedded_files += 1
+                result.embedded_chunks += chunks
+                logger.info("[%s] %s -> %s (%d chunks)", action, item.slug, doc_name, chunks)
+
+        self._store_totals(result, state, in_store)
         logger.info(result.to_log_string())
         return result
 
@@ -261,85 +303,57 @@ class GeminiAssistantProvider(BaseAssistantProvider):
     # ------------------------------------------------------------------
 
     def ask_question(self, query: str, state: dict[str, Any]) -> str:
-        """
-        Answer a query grounded on the uploaded article chunks.
-
-        Retrieval approach: chunk file IDs are selected from the most
-        relevant articles (keyword-matched on slug), then passed as Gemini
-        File API references into generate_content for in-context grounding.
-        """
+        """Answer a query using Gemini + the file_search tool over the store."""
         from google.genai import types
 
-        articles_map = state.get("articles", {})
-        selected_chunk_ids: list[str] = []
-
-        query_lower = query.lower()
-
-        # Priority-ranked chunk selection
-        for art_info in articles_map.values():
-            slug = art_info.get("slug", "").lower()
-            chunk_ids: list[str] = art_info.get("chunk_file_ids") or (
-                [art_info["remote_file_id"]] if art_info.get("remote_file_id") else []
-            )
-            if not chunk_ids:
-                continue
-
-            if "youtube" in query_lower and "how-to-use-youtube-with-optisigns" in slug:
-                selected_chunk_ids = chunk_ids + selected_chunk_ids  # highest priority
-            elif any(word in slug for word in query_lower.split() if len(word) > 3):
-                selected_chunk_ids.extend(chunk_ids)
-
-        # Fallback: include any available chunks when no keyword match
-        if not selected_chunk_ids:
-            for art_info in articles_map.values():
-                chunk_ids = art_info.get("chunk_file_ids") or (
-                    [art_info["remote_file_id"]] if art_info.get("remote_file_id") else []
-                )
-                selected_chunk_ids.extend(chunk_ids)
-                if len(selected_chunk_ids) >= 5:
-                    break
-
-        # Cap to avoid exceeding Gemini context window limits
-        selected_chunk_ids = selected_chunk_ids[:10]
-        logger.info("Querying Gemini with %d grounded chunks...", len(selected_chunk_ids))
-
-        contents: list[Any] = []
-        for fid in selected_chunk_ids:
-            try:
-                remote_file = self.client.files.get(name=fid)
-                contents.append(remote_file)
-            except Exception as exc:
-                logger.warning("Could not retrieve chunk %s: %s", fid, exc)
-
-        contents.append(query)
+        store_name = state.get("file_search_store_name")
+        if not store_name:
+            raise RuntimeError("No File Search Store in state. Run main.py first.")
 
         config = types.GenerateContentConfig(
             system_instruction=SYSTEM_PROMPT,
             temperature=0.2,
+            tools=[types.Tool(file_search=types.FileSearch(file_search_store_names=[store_name]))],
         )
 
-        candidate_models = [self.model_name, "gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-2.5-flash"]
-        unique_models = list(dict.fromkeys(candidate_models))
-
-        last_error = None
-        for model in unique_models:
+        candidate_models = list(dict.fromkeys(
+            [self.model_name, "gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-2.5-flash"]
+        ))
+        last_error: Exception | None = None
+        for model in candidate_models:
             try:
-                logger.info("Attempting generate_content with model %s...", model)
+                logger.info("Querying %s with file_search over %s ...", model, store_name)
                 response = self.client.models.generate_content(
-                    model=model,
-                    contents=contents,
-                    config=config,
+                    model=model, contents=query, config=config,
                 )
-                return response.text.strip()
+                answer = (response.text or "").strip()
+                sources = self._retrieved_sources(response)
+                if sources:
+                    answer += "\n\n[Retrieved from File Search Store: " + ", ".join(sources) + "]"
+                return answer
             except Exception as exc:
                 logger.warning("Model %s failed (%s), trying fallback...", model, exc)
                 last_error = exc
-
         raise RuntimeError(f"All candidate Gemini models failed. Last error: {last_error}")
+
+    @staticmethod
+    def _retrieved_sources(response: Any) -> list[str]:
+        """Extract unique document titles from grounding metadata (proof of retrieval)."""
+        titles: list[str] = []
+        try:
+            meta = response.candidates[0].grounding_metadata
+            for chunk in (meta.grounding_chunks or []):
+                ctx = chunk.retrieved_context
+                title = ctx and (ctx.title or ctx.document_name)
+                if title and title not in titles:
+                    titles.append(title)
+        except Exception:
+            pass
+        return titles
 
 
 class OpenAIAssistantProvider(BaseAssistantProvider):
-    """OpenAI Assistants API v2 provider using vector stores."""
+    """OpenAI provider: Vector Store + Responses API ``file_search`` tool."""
 
     def __init__(self, api_key: str | None = None, model_name: str | None = None):
         key = api_key if api_key is not None else OPENAI_API_KEY
@@ -349,96 +363,88 @@ class OpenAIAssistantProvider(BaseAssistantProvider):
         self.client = OpenAI(api_key=key)
         self.model_name = model_name or OPENAI_MODEL
 
+    def ensure_store(self, state: dict[str, Any]) -> bool:
+        vs_id = state.get("vector_store_id") or OPENAI_VECTOR_STORE_ID
+        if vs_id:
+            try:
+                self.client.vector_stores.retrieve(vs_id)
+                state["vector_store_id"] = vs_id
+                return False
+            except Exception as exc:
+                logger.warning("Vector store %s unavailable (%s); creating a new one.", vs_id, exc)
+        vs = self.client.vector_stores.create(name=VECTOR_STORE_DISPLAY_NAME)
+        state["vector_store_id"] = vs.id
+        logger.info("Created OpenAI Vector Store: %s", vs.id)
+        return True
+
     def sync_delta(self, delta_summary: DeltaSummary, state: dict[str, Any]) -> SyncResult:
-        """Sync delta articles with OpenAI Vector Store."""
         state["provider"] = "openai"
-        result = SyncResult(skipped_count=delta_summary.skipped_count)
+        store_is_new = self.ensure_store(state)
+        vs_id = state["vector_store_id"]
 
-        vector_store_id = state.get("vector_store_id")
-        if not vector_store_id:
-            vs = self.client.beta.vector_stores.create(name="OptiSigns-Knowledge-Base")
-            vector_store_id = vs.id
-            state["vector_store_id"] = vector_store_id
+        # OpenAI file IDs carry no store prefix; trust state unless the store was recreated.
+        def in_store(file_id: str | None) -> bool:
+            return bool(file_id) and not store_is_new and str(file_id).startswith("file-")
 
-        for item in delta_summary.updated:
-            if item.old_remote_file_id:
-                try:
-                    self.client.beta.vector_stores.files.delete(
-                        vector_store_id=vector_store_id,
-                        file_id=item.old_remote_file_id,
+        jobs, skipped = self._plan_uploads(delta_summary, in_store)
+        result = SyncResult(skipped_count=skipped)
+        chunking = {
+            "type": "static",
+            "static": {
+                "max_chunk_size_tokens": CHUNK_SIZE_TOKENS,
+                "chunk_overlap_tokens": CHUNK_OVERLAP_TOKENS,
+            },
+        }
+
+        for item, action in jobs:
+            try:
+                with open(item.file_path, "rb") as f:
+                    vs_file = self.client.vector_stores.files.upload_and_poll(
+                        vector_store_id=vs_id, file=f, chunking_strategy=chunking,
                     )
-                    self.client.files.delete(file_id=item.old_remote_file_id)
+                if vs_file.status != "completed":
+                    raise RuntimeError(f"status={vs_file.status}")
+            except Exception as exc:
+                logger.error("Indexing failed for '%s': %s", item.slug, exc)
+                result.failed_count += 1
+                continue
+
+            if action == "UPDATED" and in_store(item.old_remote_file_id):
+                try:
+                    self.client.vector_stores.files.delete(
+                        vector_store_id=vs_id, file_id=item.old_remote_file_id
+                    )
+                    self.client.files.delete(item.old_remote_file_id)
                 except Exception as exc:
-                    logger.warning("Failed to delete OpenAI file %s: %s", item.old_remote_file_id, exc)
+                    logger.warning("Failed to delete old file %s: %s", item.old_remote_file_id, exc)
 
-            with open(item.file_path, "rb") as f:
-                uploaded = self.client.files.create(file=f, purpose="assistants")
-            self.client.beta.vector_stores.files.create(
-                vector_store_id=vector_store_id, file_id=uploaded.id,
-            )
-            update_state_entry(state, item, remote_file_id=uploaded.id)
-            result.updated_count += 1
+            chunks = estimate_chunks(item.content)
+            update_state_entry(state, item, remote_file_id=vs_file.id, chunk_count=chunks)
+            self._tally(result, action)
+            result.embedded_files += 1
+            result.embedded_chunks += chunks
 
-        for item in delta_summary.added:
-            with open(item.file_path, "rb") as f:
-                uploaded = self.client.files.create(file=f, purpose="assistants")
-            self.client.beta.vector_stores.files.create(
-                vector_store_id=vector_store_id, file_id=uploaded.id,
-            )
-            update_state_entry(state, item, remote_file_id=uploaded.id)
-            result.added_count += 1
-
-        active_articles = state.get("articles", {})
-        result.total_remote_files = sum(1 for a in active_articles.values() if a.get("remote_file_id"))
-        result.total_chunks = sum(
-            estimate_chunks(item.content)
-            for item in delta_summary.added + delta_summary.updated + delta_summary.skipped
-        )
-
+        self._store_totals(result, state, lambda fid: bool(fid))
         logger.info(result.to_log_string())
         return result
 
     def ask_question(self, query: str, state: dict[str, Any]) -> str:
-        """Ask question via OpenAI Assistant thread run."""
-        vector_store_id = state.get("vector_store_id")
-        if not vector_store_id:
-            raise RuntimeError("No vector store found in state. Run sync first.")
-
-        assistant_id = state.get("assistant_id")
-        if not assistant_id:
-            assistant = self.client.beta.assistants.create(
-                name=ASSISTANT_NAME,
-                instructions=SYSTEM_PROMPT,
-                model=self.model_name,
-                tools=[{"type": "file_search"}],
-                tool_resources={"file_search": {"vector_store_ids": [vector_store_id]}},
-            )
-            assistant_id = assistant.id
-            state["assistant_id"] = assistant_id
-
-        thread = self.client.beta.threads.create(
-            messages=[{"role": "user", "content": query}]
+        vs_id = state.get("vector_store_id")
+        if not vs_id:
+            raise RuntimeError("No vector store found in state. Run main.py first.")
+        response = self.client.responses.create(
+            model=self.model_name,
+            instructions=SYSTEM_PROMPT,
+            input=query,
+            tools=[{"type": "file_search", "vector_store_ids": [vs_id]}],
         )
-        run = self.client.beta.threads.runs.create_and_poll(
-            thread_id=thread.id,
-            assistant_id=assistant_id,
-        )
-
-        if run.status == "completed":
-            messages = self.client.beta.threads.messages.list(thread_id=thread.id)
-            for m in messages.data:
-                if m.role == "assistant":
-                    return m.content[0].text.value.strip()
-
-        return f"Run ended with status: {run.status}"
+        return response.output_text.strip()
 
 
 def get_assistant_provider() -> BaseAssistantProvider:
     """Factory function returning the configured Assistant Provider."""
-    provider_name = AI_PROVIDER.lower()
-    if provider_name == "openai":
-        logger.info("Using OpenAI Assistant Provider.")
+    if AI_PROVIDER.lower() == "openai":
+        logger.info("Using OpenAI provider (Vector Store).")
         return OpenAIAssistantProvider()
-    else:
-        logger.info("Using Google Gemini Assistant Provider (Primary - Free Tier).")
-        return GeminiAssistantProvider()
+    logger.info("Using Google Gemini provider (File Search Store).")
+    return GeminiAssistantProvider()

@@ -36,7 +36,7 @@ python main.py
 # Query the assistant (Sanity Check)
 python scripts/test_bot.py "How do I add a YouTube video?"
 
-# Run test suite (20 unit tests)
+# Run test suite (23 unit tests)
 pytest tests/ -v
 ```
 
@@ -47,38 +47,43 @@ pytest tests/ -v
 The container runs as an ephemeral single-execution batch job and exits with code `0`:
 
 ```bash
-# Build Docker image
 docker build -t kb-delta-indexer .
 
-# Run container with environment variable
-docker run --rm -e GEMINI_API_KEY="your_api_key_here" kb-delta-indexer
+# Mount ./data so sync_state.json persists -> subsequent runs upload only the delta
+docker run --rm -e GEMINI_API_KEY="your_api_key_here" -v "$(pwd)/data:/app/data" kb-delta-indexer
 ```
 
 ---
 
-## 3. Chunking Strategy & Rationale
+## 3. Vector Store & Chunking Strategy
 
-* **Chunk Size:** `800 tokens` (~3,200 characters). **Overlap:** `100 tokens` (~400 characters).
-* **Algorithm:** Paragraph-aware recursive splitting (`_split_into_chunks` in `src/assistant.py`).  
-  Each article is split on `\n\n` (paragraph boundaries) first; if a paragraph still exceeds the budget, a hard character split is applied. This keeps step-by-step procedural instructions intact within a single chunk.
-* **Per-chunk upload:** Each chunk is written as an individual `.md` file and uploaded separately to the **Gemini File API**, so the model receives focused, size-controlled context windows rather than entire articles.
-* **Retrieval model:** Gemini performs **in-context grounding** — chunk files are passed directly as references into `generate_content` at query time. This differs from dense vector embedding (no index is built), making it reliable for factual Q&A over structured support documentation where exact wording matters.
-* **Rationale for 800 / 100:** Technical troubleshooting guides are step-oriented (`Step 1 → Step 2 → Step 3`). At 800 tokens, an entire multi-step procedure stays cohesive under its `##` header. A 100-token overlap preserves referential continuity across chunk boundaries without fragmenting actionable guidance.
-
+* **Vector store:** Gemini **File Search Store** (Gemini's equivalent of an OpenAI Vector Store), created and populated 100% via API (`file_search_stores.upload_to_file_search_store`). Each article = one document with `article_id` / `url` metadata. The store is persistent, so unchanged articles stay indexed between daily runs. OpenAI Vector Store is supported via `AI_PROVIDER=openai`.
+* **Chunking:** server-side white-space chunker, **512 tokens per chunk, 64 tokens overlap** (`CHUNK_SIZE_TOKENS` / `CHUNK_OVERLAP_TOKENS`). 512 is the maximum Gemini File Search accepts.
+* **Why 512 / 64:** support articles are short step-by-step procedures under `##` headings. ~512 tokens (~350 words) usually fits one whole section, so retrieval returns complete instructions instead of fragments. The 64-token (~12%) overlap keeps context when a step crosses a chunk boundary. Every file starts with `# Title` + `Article URL: …`, so the model can cite the source.
+* **Retrieval:** `generate_content` with the `file_search` tool (embedding search); no keyword hacks.
+* **Logging:** each run logs `Added / Updated / Skipped`, plus **files and chunks embedded**. The APIs don't return per-document chunk counts, so chunks are computed with the same 512/64 window formula.
 
 ---
 
 ## 4. Daily Job Deployment & Public Logs
 
-The sync job runs automatically every day at **02:00 UTC** via GitHub Actions Scheduled Cron.
+Runs daily at **02:00 UTC** on GitHub Actions (cron): build Docker image → run `main.py` → commit `data/sync_state.json` back so the next run only uploads the delta.
 
 * **Live Daily Job Logs:** [GitHub Actions Workflow Runs](https://github.com/thaipeace/kb-delta-indexer/actions/workflows/daily_sync.yml)
+* **Delta detection:** SHA-256 of the normalized Markdown + Zendesk `updated_at`. Updated articles: new version uploaded first, old document deleted after it is indexed. Failed uploads are retried on the next run (non-zero exit).
 
 ---
 
 ## 5. Sanity Test Verification
 
-**Question:** *"How do I add a YouTube video?"*  
-**Prompt Enforced:** Max 5 bullet points, grounded strictly in uploaded documents, citing source URLs.
+**Question:** *"How do I add a YouTube video?"* (Gemini + File Search Store, verbatim OptiBot system prompt)
 
 ![Sanity Test Result](docs/sanity_test_result.png)
+
+---
+
+## 6. Notes & Trade-offs
+
+* **Links:** relative links (`/hc/...`) are rewritten to absolute `https://support.optisigns.com/...` so citations are clickable outside the Help Center. Headings, lists and code blocks are kept; scripts, styles, forms and comments are removed. Using the Zendesk API body means there is no nav/footer to strip.
+* **Scope:** the whole public Help Center is ingested (~400 articles); set `MAX_ARTICLES` to cap it.
+* **Cut for time:** no handling of articles removed upstream (they stay in the store), and no retry/backoff beyond the next daily run.

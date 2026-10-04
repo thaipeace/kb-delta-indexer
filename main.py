@@ -20,7 +20,7 @@ logging.basicConfig(
 logger = logging.getLogger("main")
 
 
-def run_pipeline(min_count: int = MIN_ARTICLES_COUNT) -> int:
+def run_pipeline() -> int:
     """
     Execute the end-to-end ingestion, delta detection, and sync pipeline.
     Returns 0 on success, non-zero on failure.
@@ -32,11 +32,13 @@ def run_pipeline(min_count: int = MIN_ARTICLES_COUNT) -> int:
 
     try:
         # Step 1: Scrape articles from Zendesk API
-        logger.info("[Step 1/4] Ingesting articles from Zendesk Help Center API (min: %d)...", min_count)
-        raw_articles = fetch_articles(min_count=min_count)
+        logger.info("[Step 1/4] Ingesting articles from Zendesk Help Center API...")
+        raw_articles = fetch_articles()
         if not raw_articles:
             logger.error("No articles could be retrieved. Aborting sync.")
             return 1
+        if len(raw_articles) < MIN_ARTICLES_COUNT:
+            logger.warning("Only %d articles fetched (expected >= %d).", len(raw_articles), MIN_ARTICLES_COUNT)
         logger.info("Successfully fetched %d articles from Zendesk.", len(raw_articles))
 
         # Step 2: Load previous state and evaluate delta
@@ -61,15 +63,24 @@ def run_pipeline(min_count: int = MIN_ARTICLES_COUNT) -> int:
         logger.info("=================================================================")
         logger.info(
             "[JOB COMPLETE] Scraped: %d | Added: %d | Updated: %d | Skipped: %d | "
-            "Total Active Files: %d | Total Chunks: %d | Duration: %.2fs",
+            "Re-indexed: %d | Failed: %d | Embedded: %d files / %d chunks | "
+            "Store total: %d files / %d chunks | Duration: %.2fs",
             len(raw_articles),
             sync_result.added_count,
             sync_result.updated_count,
             sync_result.skipped_count,
+            sync_result.reindexed_count,
+            sync_result.failed_count,
+            sync_result.embedded_files,
+            sync_result.embedded_chunks,
             sync_result.total_remote_files,
             sync_result.total_chunks,
             duration_sec,
         )
+        if sync_result.failed_count:
+            logger.error("%d uploads failed; they will be retried next run.", sync_result.failed_count)
+            logger.info("=================================================================")
+            return 1
         logger.info("Job successfully completed with exit code 0.")
         logger.info("=================================================================")
         return 0

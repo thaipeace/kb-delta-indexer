@@ -10,14 +10,13 @@ from slugify import slugify
 
 from src.config import (
     ZENDESK_API_URL,
-    MIN_ARTICLES_COUNT,
+    MAX_ARTICLES,
     ARTICLES_DIR,
 )
 
 logger = logging.getLogger(__name__)
 
 BASE_SUPPORT_URL = "https://support.optisigns.com"
-CORE_SAMPLE_ARTICLE_ID = 360051014713  # "How to Use YouTube with OptiSigns"
 
 
 def clean_html(html_content: str, base_url: str = BASE_SUPPORT_URL) -> str:
@@ -43,10 +42,12 @@ def clean_html(html_content: str, base_url: str = BASE_SUPPORT_URL) -> str:
         elif href.startswith("./"):
             a["href"] = f"{base_url}/{href[2:]}"
 
-    # Normalize relative image sources
+    # Normalize relative image sources and drop base64 image blobs
     for img in soup.find_all("img", src=True):
         src = img["src"].strip()
-        if src.startswith("/"):
+        if src.startswith("data:image/"):
+            img.decompose()
+        elif src.startswith("/"):
             img["src"] = f"{base_url}{src}"
 
     return str(soup)
@@ -64,6 +65,9 @@ def html_to_markdown(html_content: str, base_url: str = BASE_SUPPORT_URL) -> str
         autolinks=True,
         strip=["script", "style", "noscript"],
     )
+
+    # Strip any residual inline base64 images
+    md = re.sub(r"!\[.*?\]\(data:image\/[a-zA-Z]+;base64,[^\)]+\)", "", md)
 
     # Collapse excessive vertical whitespace (more than 2 consecutive newlines)
     md = re.sub(r"\n{3,}", "\n\n", md)
@@ -105,38 +109,28 @@ def format_article_markdown(article: dict[str, Any]) -> str:
     return f"{header}{markdown_body}\n"
 
 
-def fetch_article_by_id(client: httpx.Client, article_id: int) -> dict[str, Any] | None:
-    """Fetch a specific Zendesk article by its ID."""
-    url = f"{BASE_SUPPORT_URL}/api/v2/help_center/en-us/articles/{article_id}.json"
-    try:
-        response = client.get(url, timeout=15.0)
-        if response.status_code == 200:
-            return response.json().get("article")
-    except Exception as exc:
-        logger.warning("Failed to fetch article %s by ID: %s", article_id, exc)
-    return None
+def fetch_articles(max_articles: int = MAX_ARTICLES) -> list[dict[str, Any]]:
+    """
+    Fetch published articles from the Zendesk Help Center API.
 
-
-def fetch_articles(min_count: int = MIN_ARTICLES_COUNT) -> list[dict[str, Any]]:
-    """Fetch at least min_count articles from Zendesk Help Center API."""
+    Paginates through every page (`next_page`) until exhausted, or until
+    `max_articles` is reached when a positive cap is configured.
+    Drafts and articles with an empty body are filtered out.
+    """
     articles: list[dict[str, Any]] = []
     seen_ids: set[int] = set()
     url: str | None = f"{ZENDESK_API_URL}?per_page=100"
 
     headers = {
-        "User-Agent": "OptiBot-KB-Indexer/1.0 (+https://github.com)",
+        "User-Agent": "KB-Delta-Indexer/1.0",
         "Accept": "application/json",
     }
 
-    with httpx.Client(headers=headers, follow_redirects=True, timeout=20.0) as client:
-        # Guarantee that the YouTube setup article is included at the top for the mandatory sanity test
-        logger.info("Ensuring YouTube sanity article (%s) is included at the top...", CORE_SAMPLE_ARTICLE_ID)
-        sample_article = fetch_article_by_id(client, CORE_SAMPLE_ARTICLE_ID)
-        if sample_article and sample_article.get("id"):
-            seen_ids.add(CORE_SAMPLE_ARTICLE_ID)
-            articles.insert(0, sample_article)
+    def _cap_reached() -> bool:
+        return max_articles > 0 and len(articles) >= max_articles
 
-        while url and len(articles) < min_count:
+    with httpx.Client(headers=headers, follow_redirects=True, timeout=20.0) as client:
+        while url and not _cap_reached():
             logger.info("Fetching articles from: %s", url)
             try:
                 response = client.get(url)
@@ -152,10 +146,14 @@ def fetch_articles(min_count: int = MIN_ARTICLES_COUNT) -> list[dict[str, Any]]:
 
             for art in batch:
                 art_id = art.get("id")
-                # Filter out drafts or empty articles
-                if art_id and art_id not in seen_ids and art.get("body"):
-                    seen_ids.add(art_id)
-                    articles.append(art)
+                if not art_id or art_id in seen_ids:
+                    continue
+                if art.get("draft") or not art.get("body"):
+                    continue
+                seen_ids.add(art_id)
+                articles.append(art)
+                if _cap_reached():
+                    break
 
             url = data.get("next_page")
 

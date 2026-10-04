@@ -26,16 +26,27 @@ OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
 
 ASSISTANT_NAME = os.getenv("ASSISTANT_NAME", "OptiBot")
 
+# Vector store / knowledge base naming.
+# Gemini: File Search Store (persistent, server-side chunking + embeddings).
+# OpenAI: Vector Store. If an existing store name/ID is supplied it is reused,
+# otherwise one is created on first run and persisted in sync_state.json.
+VECTOR_STORE_DISPLAY_NAME = os.getenv("VECTOR_STORE_DISPLAY_NAME", "kb-delta-indexer-store")
+GEMINI_FILE_SEARCH_STORE = os.getenv("GEMINI_FILE_SEARCH_STORE", "")
+OPENAI_VECTOR_STORE_ID = os.getenv("OPENAI_VECTOR_STORE_ID", "")
+
 # Zendesk & Scraper Settings
 ZENDESK_API_URL = os.getenv(
     "ZENDESK_API_URL", 
     "https://support.optisigns.com/api/v2/help_center/en-us/articles.json"
 )
-MIN_ARTICLES_COUNT = int(os.getenv("MIN_ARTICLES_COUNT", "35"))
+# Sanity threshold: warn if fewer articles than this are ingested (brief asks for >= 30).
+MIN_ARTICLES_COUNT = int(os.getenv("MIN_ARTICLES_COUNT", "30"))
+# Upper bound on ingested articles. 0 = ingest the entire Help Center.
+MAX_ARTICLES = int(os.getenv("MAX_ARTICLES", "0"))
 
-# Chunking Strategy Configuration
-CHUNK_SIZE_TOKENS = int(os.getenv("CHUNK_SIZE_TOKENS", "800"))
-CHUNK_OVERLAP_TOKENS = int(os.getenv("CHUNK_OVERLAP_TOKENS", "100"))
+# Chunking Strategy Configuration (Gemini File Search caps chunks at 512 tokens)
+CHUNK_SIZE_TOKENS = int(os.getenv("CHUNK_SIZE_TOKENS", "512"))
+CHUNK_OVERLAP_TOKENS = int(os.getenv("CHUNK_OVERLAP_TOKENS", "64"))
 
 # Verbatim System Prompt (Mandatory requirement from OptiSigns brief)
 SYSTEM_PROMPT = """You are OptiBot, the customer-support bot for OptiSigns.com.
