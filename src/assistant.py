@@ -145,8 +145,10 @@ class GeminiAssistantProvider(BaseAssistantProvider):
     Google Gemini provider backed by a **File Search Store** (managed vector store).
 
     * ``upload_to_file_search_store`` uploads each article's Markdown file; Gemini
-      chunks it with our white-space chunking config (800 tokens / 100 overlap),
-      embeds the chunks and indexes them. Documents persist until deleted.
+      chunks it with our white-space chunking config (512 tokens / 64 overlap,
+      which is the maximum allowed by Google Gemini File Search Store API;
+      OpenAI provider supports 800/100 or configurable), embeds the chunks and
+      indexes them. Documents persist until deleted.
     * Each document carries ``article_id`` / ``url`` custom metadata.
     * ``ask_question`` calls ``generate_content`` with the ``file_search`` tool so
       retrieval is semantic (embedding search), not keyword-based.
