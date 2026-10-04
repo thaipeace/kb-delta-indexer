@@ -15,4 +15,4 @@ __pycache__/
 .env
 docs/
 tests/
-*.md
+/*.md

@@ -134,6 +134,9 @@ def evaluate_delta(
         content = format_article_markdown(article)
         content_hash = compute_content_hash(content)
 
+        # Always ensure the clean markdown file exists on disk
+        file_path.write_text(content, encoding="utf-8")
+
         if id_str not in stored_articles:
             # Case 1: Brand new article
             delta_item = ArticleDelta(
@@ -148,8 +151,6 @@ def evaluate_delta(
                 content=content,
             )
             summary.added.append(delta_item)
-            # Write markdown file to disk
-            file_path.write_text(content, encoding="utf-8")
 
         else:
             prev = stored_articles[id_str]
@@ -172,8 +173,6 @@ def evaluate_delta(
                     old_remote_file_id=prev_file_id,
                 )
                 summary.updated.append(delta_item)
-                # Overwrite updated file to disk
-                file_path.write_text(content, encoding="utf-8")
             else:
                 # Case 3: Completely unchanged
                 delta_item = ArticleDelta(

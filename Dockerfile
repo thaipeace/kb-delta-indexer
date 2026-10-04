@@ -11,9 +11,10 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy application source code and scripts
+# Copy application source code, initial data state, and scripts
 COPY src/ ./src/
 COPY scripts/ ./scripts/
+COPY data/ ./data/
 COPY main.py .
 
 # Execute the daily sync batch job and exit

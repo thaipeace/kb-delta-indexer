@@ -15,6 +15,7 @@ import logging
 import math
 import time
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Any, Callable
 
 from src.config import (
@@ -202,6 +203,13 @@ class GeminiAssistantProvider(BaseAssistantProvider):
         """Kick off an async upload+index operation for one article."""
         from google.genai import types
 
+        # Ensure file exists on disk with content and resolve absolute path
+        file_path = Path(item.file_path).resolve()
+        if not file_path.is_file():
+            file_path.parent.mkdir(parents=True, exist_ok=True)
+            content = item.content or f"# {item.title}\n\nArticle URL: {item.url}\n"
+            file_path.write_text(content, encoding="utf-8")
+
         config = types.UploadToFileSearchStoreConfig(
             display_name=item.slug,
             mime_type="text/markdown",
@@ -218,7 +226,7 @@ class GeminiAssistantProvider(BaseAssistantProvider):
         )
         return self.client.file_search_stores.upload_to_file_search_store(
             file_search_store_name=store_name,
-            file=str(item.file_path),
+            file=str(file_path),
             config=config,
         )
 
