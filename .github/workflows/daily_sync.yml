@@ -2,8 +2,9 @@ name: Daily Knowledge Base Delta Sync
 
 on:
   schedule:
-    # Runs at 02:00 UTC every day (approx 09:00 AM VN time)
-    - cron: '0 2 * * *'
+    # Runs at 02:15 UTC every day (~09:15 AM VN time).
+    # Using minute :15 avoids high queue congestion at :00 on GitHub Actions runners.
+    - cron: '15 2 * * *'
   workflow_dispatch: # Allows manual trigger from GitHub UI
   push:
     branches:
