@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_sync": "2026-10-05T09:03:03.394158+00:00",
+  "last_sync": "2026-10-06T08:58:58.246351+00:00",
   "vector_store_id": null,
   "assistant_id": null,
   "articles": {
@@ -2048,10 +2048,10 @@
       "slug": "powerpoint-resolution-size-for-use-with-digital-signage",
       "title": "PowerPoint Resolution, Size for use with Digital Signage",
       "url": "https://support.optisigns.com/hc/en-us/articles/360033693534-PowerPoint-Resolution-Size-for-use-with-Digital-Signage",
-      "updated_at": "2026-09-10T09:40:52Z",
-      "content_hash": "548bc0eb98d9d00c38ecdabff9603dc68c7cb5b0a520ff4d2ee3e6405f17e1dd",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/powerpointresolutionsizefor-mopo5capoij6",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/powerpointresolutionsizefor-mopo5capoij6",
+      "updated_at": "2026-10-06T06:37:46Z",
+      "content_hash": "17aa3be49d352b2ee9ed6da803096c770952bcc524af21492a834aca3c8400f9",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/powerpointresolutionsizefor-r9vo8snm6b7k",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/powerpointresolutionsizefor-r9vo8snm6b7k",
       "chunk_count": 1
     },
     "360026610194": {
@@ -2118,10 +2118,10 @@
       "slug": "how-to-install-an-apk-file-on-your-fire-tv",
       "title": "How to Install an APK file on your Fire TV",
       "url": "https://support.optisigns.com/hc/en-us/articles/360016313754-How-to-Install-an-APK-file-on-your-Fire-TV",
-      "updated_at": "2026-10-04T09:21:08Z",
-      "content_hash": "60fdd8224c025f52ae3c00856a5b8280abbb7a39a40b76091835429b7186d995",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoinstallanapkfileonyour-dby3ysk3drks",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoinstallanapkfileonyour-dby3ysk3drks",
+      "updated_at": "2026-10-05T21:09:30Z",
+      "content_hash": "188eaa6e7f8a2e6efd2120aa3bb8436283b681b1cd66e32865f527f8a6c2fac0",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoinstallanapkfileonyour-iicsbzgpcs4w",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoinstallanapkfileonyour-iicsbzgpcs4w",
       "chunk_count": 1
     },
     "360016252654": {
@@ -2298,10 +2298,10 @@
       "slug": "how-to-preview-a-screen",
       "title": "How to Preview a Screen",
       "url": "https://support.optisigns.com/hc/en-us/articles/360035739414-How-to-Preview-a-Screen",
-      "updated_at": "2026-09-07T08:20:47Z",
-      "content_hash": "bda0e410ae6369eb3842ba3eac1fc59513f0535484e58aefce991be784d3f807",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtopreviewascreen-at6mh4drvzku",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtopreviewascreen-at6mh4drvzku",
+      "updated_at": "2026-10-05T16:37:23Z",
+      "content_hash": "8998fb98077fa01943a76acad3f1c4eb1432beee41746a595897d0bc63825be4",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtopreviewascreen-fz8qyvj9r81p",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtopreviewascreen-fz8qyvj9r81p",
       "chunk_count": 1
     },
     "360024310813": {
