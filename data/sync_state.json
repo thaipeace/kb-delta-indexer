@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_sync": "2026-10-06T08:58:58.246351+00:00",
+  "last_sync": "2026-10-07T08:38:53.836701+00:00",
   "vector_store_id": null,
   "assistant_id": null,
   "articles": {
@@ -2218,10 +2218,10 @@
       "slug": "how-to-get-the-most-out-of-your-digital-signs",
       "title": "How to get the most out of your Digital Signs",
       "url": "https://support.optisigns.com/hc/en-us/articles/25607930101907-How-to-get-the-most-out-of-your-Digital-Signs",
-      "updated_at": "2026-09-10T09:50:43Z",
-      "content_hash": "31f9e8b274016218d62ab33b86e7ba595f2bad7c9a3ec59069c4dc2202e037ea",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtogetthemostoutofyourdig-tl912tnw5d3o",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtogetthemostoutofyourdig-tl912tnw5d3o",
+      "updated_at": "2026-10-06T21:57:44Z",
+      "content_hash": "fe4fca2eb7314fc808fa542e13ba1fda3d4ea26c105c0b31de4c1babb9a14c9d",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtogetthemostoutofyourdig-ia1lwefdgtar",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtogetthemostoutofyourdig-ia1lwefdgtar",
       "chunk_count": 1
     },
     "18986181635859": {
