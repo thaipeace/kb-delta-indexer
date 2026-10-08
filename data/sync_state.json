@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_sync": "2026-10-07T08:38:53.836701+00:00",
+  "last_sync": "2026-10-08T08:57:34.439146+00:00",
   "vector_store_id": null,
   "assistant_id": null,
   "articles": {
@@ -488,10 +488,10 @@
       "slug": "what-do-i-get-with-an-optisigns-free-plan",
       "title": "What Do I Get With an OptiSigns Free Plan?",
       "url": "https://support.optisigns.com/hc/en-us/articles/33940834613139-What-Do-I-Get-With-an-OptiSigns-Free-Plan",
-      "updated_at": "2026-09-10T09:51:52Z",
-      "content_hash": "fbe0844d97a0cd3e72aad3dd55e701ab3d7de6dbf9e12f2cd22f801d682a8b7d",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/whatdoigetwithanoptisignsfr-6rvk3yf4tsn9",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/whatdoigetwithanoptisignsfr-6rvk3yf4tsn9",
+      "updated_at": "2026-10-07T22:30:11Z",
+      "content_hash": "2f841b069d652f188edd17bbac44bc4ff012673f1e74d9f6a8380fc0aca76914",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/whatdoigetwithanoptisignsfr-322nss4679kr",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/whatdoigetwithanoptisignsfr-322nss4679kr",
       "chunk_count": 2
     },
     "33382537925267": {
