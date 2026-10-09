@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_sync": "2026-10-08T08:57:34.439146+00:00",
+  "last_sync": "2026-10-09T09:02:58.903220+00:00",
   "vector_store_id": null,
   "assistant_id": null,
   "articles": {
@@ -78,11 +78,11 @@
       "slug": "how-to-display-grafana-dashboards-on-optisigns",
       "title": "How to Display Grafana Dashboards on OptiSigns",
       "url": "https://support.optisigns.com/hc/en-us/articles/55447693635731-How-to-Display-Grafana-Dashboards-on-OptiSigns",
-      "updated_at": "2026-09-22T14:14:49Z",
-      "content_hash": "838a9f0430c9949d3b939c1d369544b596e92a1d091e83c8a598cc4b66857d0a",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplaygrafanadashboar-gvv5zz7xlt8t",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplaygrafanadashboar-gvv5zz7xlt8t",
-      "chunk_count": 6
+      "updated_at": "2026-10-08T16:32:47Z",
+      "content_hash": "a7f7a958dbc5ec6a23dac6ad963f19b04e0f34c9a0e1c07077dc94abd48ede86",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplaygrafanadashboar-q79vc1n80tc3",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplaygrafanadashboar-q79vc1n80tc3",
+      "chunk_count": 11
     },
     "55416186918163": {
       "slug": "how-to-get-a-microsoft-teams-webhook-url-for-optisigns",
@@ -488,10 +488,10 @@
       "slug": "what-do-i-get-with-an-optisigns-free-plan",
       "title": "What Do I Get With an OptiSigns Free Plan?",
       "url": "https://support.optisigns.com/hc/en-us/articles/33940834613139-What-Do-I-Get-With-an-OptiSigns-Free-Plan",
-      "updated_at": "2026-10-07T22:30:11Z",
-      "content_hash": "2f841b069d652f188edd17bbac44bc4ff012673f1e74d9f6a8380fc0aca76914",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/whatdoigetwithanoptisignsfr-322nss4679kr",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/whatdoigetwithanoptisignsfr-322nss4679kr",
+      "updated_at": "2026-10-08T16:57:16Z",
+      "content_hash": "9d13087463dcb24594357ef6ab0f0cc1743bc13033c4766e48e7502f2365abb7",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/whatdoigetwithanoptisignsfr-t3xkjwy6a4ag",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/whatdoigetwithanoptisignsfr-t3xkjwy6a4ag",
       "chunk_count": 2
     },
     "33382537925267": {
@@ -2118,10 +2118,10 @@
       "slug": "how-to-install-an-apk-file-on-your-fire-tv",
       "title": "How to Install an APK file on your Fire TV",
       "url": "https://support.optisigns.com/hc/en-us/articles/360016313754-How-to-Install-an-APK-file-on-your-Fire-TV",
-      "updated_at": "2026-10-05T21:09:30Z",
-      "content_hash": "188eaa6e7f8a2e6efd2120aa3bb8436283b681b1cd66e32865f527f8a6c2fac0",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoinstallanapkfileonyour-iicsbzgpcs4w",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoinstallanapkfileonyour-iicsbzgpcs4w",
+      "updated_at": "2026-10-09T06:17:18Z",
+      "content_hash": "be7c2ce1f5f642949a1b937c2f5e374d623b2376d7604ee0e501cdaee5c8980c",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoinstallanapkfileonyour-ebygln5nt7ux",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoinstallanapkfileonyour-ebygln5nt7ux",
       "chunk_count": 1
     },
     "360016252654": {
