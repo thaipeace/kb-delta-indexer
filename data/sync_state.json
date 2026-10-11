@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_sync": "2026-10-10T08:29:13.447980+00:00",
+  "last_sync": "2026-10-11T08:49:18.198833+00:00",
   "vector_store_id": null,
   "assistant_id": null,
   "articles": {
@@ -598,10 +598,10 @@
       "slug": "list-of-supported-cities-for-weather-wall-city-themes",
       "title": "List of Supported Cities for Weather Wall City Themes",
       "url": "https://support.optisigns.com/hc/en-us/articles/29465595849235-List-of-Supported-Cities-for-Weather-Wall-City-Themes",
-      "updated_at": "2026-09-10T09:51:18Z",
-      "content_hash": "3e699cfc99eeb60f17c5895776d3285106686cac919f798cc57fa9fd1dcd5e58",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/listofsupportedcitiesforwea-55iofp0qdkqi",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/listofsupportedcitiesforwea-55iofp0qdkqi",
+      "updated_at": "2026-10-10T22:18:29Z",
+      "content_hash": "a750a9fdb9c762c080d09bf7a7a3eb4497f4c83c661921bbed7cc0ecc69cf300",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/listofsupportedcitiesforwea-u3unh2wp0kei",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/listofsupportedcitiesforwea-u3unh2wp0kei",
       "chunk_count": 1
     },
     "29238381023123": {
