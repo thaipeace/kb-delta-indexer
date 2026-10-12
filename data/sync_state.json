@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_sync": "2026-10-11T08:49:18.198833+00:00",
+  "last_sync": "2026-10-12T09:11:17.601679+00:00",
   "vector_store_id": null,
   "assistant_id": null,
   "articles": {
@@ -2198,11 +2198,11 @@
       "slug": "how-to-manage-and-edit-your-playlist-settings",
       "title": "How to Manage and Edit Your Playlist Settings",
       "url": "https://support.optisigns.com/hc/en-us/articles/28295074995859-How-to-Manage-and-Edit-Your-Playlist-Settings",
-      "updated_at": "2026-09-14T16:01:05Z",
-      "content_hash": "b9a4720f6553c1b941d561f6cf70fce5a9cfb80cab99ee0395ffb83e4d421de7",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtomanageandedityourplayl-g18019puyknx",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtomanageandedityourplayl-g18019puyknx",
-      "chunk_count": 4
+      "updated_at": "2026-10-12T07:27:37Z",
+      "content_hash": "21fe966541a72c1da5d2795124e42fab138ef614037fd68bfbc1bd2d764edaba",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtomanageandedityourplayl-31cp1ieb63l3",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtomanageandedityourplayl-31cp1ieb63l3",
+      "chunk_count": 3
     },
     "28026588373139": {
       "slug": "how-to-fix-the-scaling-issue-on-optisigns-android-device-gen",
@@ -2588,10 +2588,10 @@
       "slug": "what-hardware-and-devices-are-supported",
       "title": "What hardware and devices are supported?",
       "url": "https://support.optisigns.com/hc/en-us/articles/360021855653-What-hardware-and-devices-are-supported",
-      "updated_at": "2026-09-14T15:11:31Z",
-      "content_hash": "db07c16f71dbc1a3bb5eb70b94f6690868dc70effedacc525c1c50e7683b050c",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/whathardwareanddevicesaresu-660418tzyfua",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/whathardwareanddevicesaresu-660418tzyfua",
+      "updated_at": "2026-10-12T06:20:04Z",
+      "content_hash": "93406d1fc19876402ecab84d2aa1339ee2cd7e35988cbd31422084daa1e60c4d",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/whathardwareanddevicesaresu-n7avg230tsi8",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/whathardwareanddevicesaresu-n7avg230tsi8",
       "chunk_count": 1
     },
     "360019588654": {
