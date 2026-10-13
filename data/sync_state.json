@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_sync": "2026-10-12T09:11:17.601679+00:00",
+  "last_sync": "2026-10-13T09:25:38.784650+00:00",
   "vector_store_id": null,
   "assistant_id": null,
   "articles": {
@@ -18,11 +18,11 @@
       "slug": "how-to-display-salesforce-dashboards-and-reports-on",
       "title": "How to Display Salesforce Dashboards and Reports on OptiSigns",
       "url": "https://support.optisigns.com/hc/en-us/articles/55895814798739-How-to-Display-Salesforce-Dashboards-and-Reports-on-OptiSigns",
-      "updated_at": "2026-09-29T19:44:32Z",
-      "content_hash": "f0c697aca587bfd015bae3d1c3211ecf6875aa7bc61ade6cc7c77fe21f199aa0",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplaysalesforcedashb-98xp46i936pk",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplaysalesforcedashb-98xp46i936pk",
-      "chunk_count": 7
+      "updated_at": "2026-10-12T20:31:04Z",
+      "content_hash": "2d1324e5e31386fc38e38816db6c9ed7129d9d2811c6119f0315dda0b879afee",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplaysalesforcedashb-ymgqb92tnor0",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplaysalesforcedashb-ymgqb92tnor0",
+      "chunk_count": 8
     },
     "55719322614803": {
       "slug": "inbound-webhook-datasources-in-designer",
@@ -498,10 +498,10 @@
       "slug": "making-a-video-wall-with-optisigns-video-wall-app",
       "title": "Making a Video Wall with OptiSigns (Video Wall App)",
       "url": "https://support.optisigns.com/hc/en-us/articles/33382537925267-Making-a-Video-Wall-with-OptiSigns-Video-Wall-App",
-      "updated_at": "2026-09-10T09:51:47Z",
-      "content_hash": "341ffbb2c68b5266d8373f15c3b38ef690ec03a81cdf032e4052f342e7f18e45",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/makingavideowallwithoptisig-hnlzlo3w0pr5",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/makingavideowallwithoptisig-hnlzlo3w0pr5",
+      "updated_at": "2026-10-13T04:44:01Z",
+      "content_hash": "f07d2c8119a5f7cd484fc9d3420d4e566b0ac9067b4545b8a370f9b08b7df599",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/makingavideowallwithoptisig-d9eoazac79rl",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/makingavideowallwithoptisig-d9eoazac79rl",
       "chunk_count": 6
     },
     "32860569148819": {
@@ -556,12 +556,12 @@
     },
     "31113088917907": {
       "slug": "how-to-use-toast-api-data-with-optisigns",
-      "title": "How to use Toast API data with OptiSigns",
-      "url": "https://support.optisigns.com/hc/en-us/articles/31113088917907-How-to-use-Toast-API-data-with-OptiSigns",
-      "updated_at": "2025-09-02T20:24:12Z",
-      "content_hash": "ecd2f5ffe9fc43371ab0e382e0957f1ed4c31906439d6a2937fbec275f5dfb5b",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousetoastapidatawithopt-bcfapuj3b9wp",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousetoastapidatawithopt-bcfapuj3b9wp",
+      "title": "How to Use Toast API Data with OptiSigns",
+      "url": "https://support.optisigns.com/hc/en-us/articles/31113088917907-How-to-Use-Toast-API-Data-with-OptiSigns",
+      "updated_at": "2026-10-12T18:49:12Z",
+      "content_hash": "a04c57f1541ff9d8e2c68bb36c7f7bb562a9742356120df74e3a1ce8d5e38810",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousetoastapidatawithopt-aru6hjc8jwa5",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousetoastapidatawithopt-aru6hjc8jwa5",
       "chunk_count": 2
     },
     "30310366838803": {
@@ -678,10 +678,10 @@
       "slug": "how-to-create-use-playlists",
       "title": "How to Create & Use Playlists",
       "url": "https://support.optisigns.com/hc/en-us/articles/28295104605843-How-to-Create-Use-Playlists",
-      "updated_at": "2026-09-10T09:51:04Z",
-      "content_hash": "bb107afd1308e62d8f0b149b493c21b0529edc66dd67c125a2c017fafe08ea82",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocreateuseplaylists-1mjshgzpup2b",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocreateuseplaylists-1mjshgzpup2b",
+      "updated_at": "2026-10-12T21:22:16Z",
+      "content_hash": "c016db50c4a5912692ea2345f54dfcf35ac99c6feebe71b89e232d42e1b4ec06",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocreateuseplaylists-exrfii05fzv4",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocreateuseplaylists-exrfii05fzv4",
       "chunk_count": 2
     },
     "28140190892307": {
@@ -1898,10 +1898,10 @@
       "slug": "how-to-create-and-use-nested-playlists",
       "title": "How to Create and Use Nested Playlists",
       "url": "https://support.optisigns.com/hc/en-us/articles/360043621953-How-to-Create-and-Use-Nested-Playlists",
-      "updated_at": "2026-09-11T02:59:22Z",
-      "content_hash": "4b0530a2e419f049793fde83ccf7b8e4cad076250a07eb2f17ca839e03045c5d",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocreateandusenestedplay-bxlof2colu5e",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocreateandusenestedplay-bxlof2colu5e",
+      "updated_at": "2026-10-12T21:22:12Z",
+      "content_hash": "f4a6bedb7a681c8a127ac4420deee207e19d3b95ed58c3891e7483c53eae3922",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocreateandusenestedplay-5t38o81tv34g",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocreateandusenestedplay-5t38o81tv34g",
       "chunk_count": 1
     },
     "360042736794": {
@@ -2018,10 +2018,10 @@
       "slug": "working-with-teams-and-security-levels",
       "title": "Working with Teams and Security Levels",
       "url": "https://support.optisigns.com/hc/en-us/articles/360034883113-Working-with-Teams-and-Security-Levels",
-      "updated_at": "2026-09-25T09:11:39Z",
-      "content_hash": "89ffcb23495a9b7329f6a1249736bfb1afb7067a6be3289b782c5e49f3a6c980",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/workingwithteamsandsecurity-44i39eywav0v",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/workingwithteamsandsecurity-44i39eywav0v",
+      "updated_at": "2026-10-13T01:44:24Z",
+      "content_hash": "ca628882ab3081fd0f191c2c87999302f2aa77d7a0ca1db3bbb5cbe87c43163c",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/workingwithteamsandsecurity-1z0ebe7289cf",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/workingwithteamsandsecurity-1z0ebe7289cf",
       "chunk_count": 2
     },
     "360034379293": {
@@ -2148,10 +2148,10 @@
       "slug": "what-types-of-files-are-supported",
       "title": "What types of files are supported?",
       "url": "https://support.optisigns.com/hc/en-us/articles/360016342373-What-types-of-files-are-supported",
-      "updated_at": "2025-09-08T14:04:57Z",
-      "content_hash": "46150663f4304d4bb4d869a79ccafbd8ae8c0bd1b983667b2ea56c1d72ca7cb1",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/whattypesoffilesaresupporte-smfqo6k7rs9h",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/whattypesoffilesaresupporte-smfqo6k7rs9h",
+      "updated_at": "2026-10-13T01:42:44Z",
+      "content_hash": "59a41da281a0c909b4405e744ccb43d0b61295b449158c4dff81cfe37cfe815f",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/whattypesoffilesaresupporte-m6xn1c8bfxmk",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/whattypesoffilesaresupporte-m6xn1c8bfxmk",
       "chunk_count": 1
     },
     "42305104960147": {
@@ -2198,10 +2198,10 @@
       "slug": "how-to-manage-and-edit-your-playlist-settings",
       "title": "How to Manage and Edit Your Playlist Settings",
       "url": "https://support.optisigns.com/hc/en-us/articles/28295074995859-How-to-Manage-and-Edit-Your-Playlist-Settings",
-      "updated_at": "2026-10-12T07:27:37Z",
-      "content_hash": "21fe966541a72c1da5d2795124e42fab138ef614037fd68bfbc1bd2d764edaba",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtomanageandedityourplayl-31cp1ieb63l3",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtomanageandedityourplayl-31cp1ieb63l3",
+      "updated_at": "2026-10-12T21:22:30Z",
+      "content_hash": "0d731469089f2416ce29aaae68a345d13f7d09841897f565bde89e063a37c472",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtomanageandedityourplayl-mlxtqq4elx2a",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtomanageandedityourplayl-mlxtqq4elx2a",
       "chunk_count": 3
     },
     "28026588373139": {
@@ -3255,13 +3255,13 @@
       "chunk_count": 1
     },
     "8399990754195": {
-      "slug": "how-to-display-smartsheet-report-on-optisigns",
-      "title": "How to display SmartSheet report on OptiSigns",
-      "url": "https://support.optisigns.com/hc/en-us/articles/8399990754195-How-to-display-SmartSheet-report-on-OptiSigns",
-      "updated_at": "2025-09-04T18:50:22Z",
-      "content_hash": "7d6820602acd27b8c9fa583fc003ec2e0e08b3db325039daca5990df3c471056",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplaysmartsheetrepor-udirlcx83vlr",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplaysmartsheetrepor-udirlcx83vlr",
+      "slug": "how-to-display-a-smartsheet-report-on-optisigns",
+      "title": "How to Display a Smartsheet Report on OptiSigns",
+      "url": "https://support.optisigns.com/hc/en-us/articles/8399990754195-How-to-Display-a-Smartsheet-Report-on-OptiSigns",
+      "updated_at": "2026-10-12T18:33:37Z",
+      "content_hash": "ab9d6166985f6962f68ca4bdc45d9155708b64226826d0c1efcb5a0b455ca3c8",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplayasmartsheetrepo-4f4gehqunvfl",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplayasmartsheetrepo-4f4gehqunvfl",
       "chunk_count": 1
     },
     "8369526604435": {
@@ -4125,13 +4125,13 @@
       "chunk_count": 2
     },
     "360016254994": {
-      "slug": "how-to-add-use-vimeo-video-with-optisigns",
-      "title": "How to add & use Vimeo video with OptiSigns",
-      "url": "https://support.optisigns.com/hc/en-us/articles/360016254994-How-to-add-use-Vimeo-video-with-OptiSigns",
-      "updated_at": "2025-09-04T18:00:23Z",
-      "content_hash": "e2cccb29a26dda9854ca0e61c1003bbb4d6fba07729134c0f96f364091fcf545",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoaddusevimeovideowithop-rr44613g4srf",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoaddusevimeovideowithop-rr44613g4srf",
+      "slug": "how-to-display-vimeo-videos-with-optisigns",
+      "title": "How to Display Vimeo Videos with OptiSigns",
+      "url": "https://support.optisigns.com/hc/en-us/articles/360016254994-How-to-Display-Vimeo-Videos-with-OptiSigns",
+      "updated_at": "2026-10-12T20:49:41Z",
+      "content_hash": "9b0a1ca42a6a9fd6e08e8f33187d1b7591a2e0a99e4261e73f563eae885e2d87",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplayvimeovideoswith-rx0341yy4hf0",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplayvimeovideoswith-rx0341yy4hf0",
       "chunk_count": 1
     },
     "360016382473": {
