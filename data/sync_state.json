@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_sync": "2026-10-13T09:25:38.784650+00:00",
+  "last_sync": "2026-10-14T07:38:03.483782+00:00",
   "vector_store_id": null,
   "assistant_id": null,
   "articles": {
@@ -718,10 +718,10 @@
       "slug": "amazon-tv-firestick-troubleshooting-guide",
       "title": "Amazon TV / FireStick Troubleshooting Guide",
       "url": "https://support.optisigns.com/hc/en-us/articles/27463953562899-Amazon-TV-FireStick-Troubleshooting-Guide",
-      "updated_at": "2026-10-02T14:02:01Z",
-      "content_hash": "a6af304e5bc7f67fabe9858f4a0cba271fd1d28ad1e18137279f51f70c9fcac2",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/amazontvfiresticktroublesho-rzw3x48jlti3",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/amazontvfiresticktroublesho-rzw3x48jlti3",
+      "updated_at": "2026-10-13T13:00:37Z",
+      "content_hash": "f8faf6aabb5846c9f3c8d22cbe2ae2edd3229164c6089b9ed597fff6ac68c532",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/amazontvfiresticktroublesho-3zpe1ppzq0t0",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/amazontvfiresticktroublesho-3zpe1ppzq0t0",
       "chunk_count": 2
     },
     "27458261258387": {
@@ -1985,14 +1985,14 @@
       "chunk_count": 1
     },
     "360037416494": {
-      "slug": "how-to-use-the-jira-formerly-atlassian-jira-app",
-      "title": "How to use the Jira (formerly Atlassian JIRA) app",
-      "url": "https://support.optisigns.com/hc/en-us/articles/360037416494-How-to-use-the-Jira-formerly-Atlassian-JIRA-app",
-      "updated_at": "2026-09-10T09:41:23Z",
-      "content_hash": "031225de147e4cc19e61a6a30cc07e7c20e3554e3e2afb02773e5a916e58a649",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethejiraformerlyatla-hkwi84tc6uz6",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethejiraformerlyatla-hkwi84tc6uz6",
-      "chunk_count": 1
+      "slug": "how-to-use-the-jira-app",
+      "title": "How to Use the Jira App",
+      "url": "https://support.optisigns.com/hc/en-us/articles/360037416494-How-to-Use-the-Jira-App",
+      "updated_at": "2026-10-13T21:50:54Z",
+      "content_hash": "0f21cb936a2c239dc4e378de092db4e02ceaadeb9e6b2b384eede81e728c5483",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethejiraapp-6enn5at5kozx",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethejiraapp-6enn5at5kozx",
+      "chunk_count": 2
     },
     "360037391854": {
       "slug": "how-to-display-content-inside-websites-that-require-login",
@@ -2955,14 +2955,14 @@
       "chunk_count": 1
     },
     "12454101966355": {
-      "slug": "how-to-use-the-musthavemenus-app-with-optisigns",
-      "title": "How to use the MustHaveMenus  app with OptiSigns",
-      "url": "https://support.optisigns.com/hc/en-us/articles/12454101966355-How-to-use-the-MustHaveMenus-app-with-OptiSigns",
-      "updated_at": "2026-09-10T09:49:08Z",
-      "content_hash": "c04d542239abd508e037240a7a34739317492c82db055d2d5c89d38d49ec72f3",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethemusthavemenusapp-afnwh10741e2",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethemusthavemenusapp-afnwh10741e2",
-      "chunk_count": 1
+      "slug": "how-to-use-the-musthavemenus-app",
+      "title": "How to Use the MustHaveMenus App",
+      "url": "https://support.optisigns.com/hc/en-us/articles/12454101966355-How-to-Use-the-MustHaveMenus-App",
+      "updated_at": "2026-10-13T20:53:34Z",
+      "content_hash": "1116a8e373f360f445ff84ae893827945f1fe7e7616faaa4e04be77b316f6ac3",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethemusthavemenusapp-rie8aropob07",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethemusthavemenusapp-rie8aropob07",
+      "chunk_count": 2
     },
     "4414558369811": {
       "slug": "pagination",
@@ -3315,14 +3315,14 @@
       "chunk_count": 4
     },
     "6091289267475": {
-      "slug": "how-to-use-matterport-app",
-      "title": "How to use Matterport App",
-      "url": "https://support.optisigns.com/hc/en-us/articles/6091289267475-How-to-use-Matterport-App",
-      "updated_at": "2026-09-10T09:48:13Z",
-      "content_hash": "7f42b774ece70d79132f7acceb899a9f3676b1f197f4d172eb7a1d5d10dd9cc4",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousematterportapp-bp9g9rietybn",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousematterportapp-bp9g9rietybn",
-      "chunk_count": 1
+      "slug": "how-to-use-the-matterport-app",
+      "title": "How to Use the Matterport App",
+      "url": "https://support.optisigns.com/hc/en-us/articles/6091289267475-How-to-Use-the-Matterport-App",
+      "updated_at": "2026-10-13T20:37:01Z",
+      "content_hash": "a8dec66d8eeffff68fd648820c75bfd4452ce6e7641da0935c292bb44ee68801",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethematterportapp-n00fmid3k26r",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethematterportapp-n00fmid3k26r",
+      "chunk_count": 2
     },
     "6086986017299": {
       "slug": "how-to-use-optisigns-screen-capture-app",
@@ -3345,14 +3345,14 @@
       "chunk_count": 1
     },
     "5119724468371": {
-      "slug": "how-to-use-notion-app",
-      "title": "How to use Notion App",
-      "url": "https://support.optisigns.com/hc/en-us/articles/5119724468371-How-to-use-Notion-App",
-      "updated_at": "2026-09-10T09:48:04Z",
-      "content_hash": "58fdb9350afd141c81c4427561d8991ed25af0b6234cdbb1e8be94417c76c762",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousenotionapp-84eknklgcimu",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousenotionapp-84eknklgcimu",
-      "chunk_count": 1
+      "slug": "how-to-use-the-notion-app",
+      "title": "How to Use the Notion App",
+      "url": "https://support.optisigns.com/hc/en-us/articles/5119724468371-How-to-Use-the-Notion-App",
+      "updated_at": "2026-10-13T17:37:02Z",
+      "content_hash": "bed38316e8b6aa785824a3e7fae62ecf7265449a78a2b3e65862cc24f9fe1a13",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethenotionapp-tqyiku20hyu8",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethenotionapp-tqyiku20hyu8",
+      "chunk_count": 2
     },
     "4529298306963": {
       "slug": "how-to-use-microsoft-excel-online-with-optisigns",
@@ -3555,14 +3555,14 @@
       "chunk_count": 3
     },
     "1500002233221": {
-      "slug": "how-to-use-asana-app",
-      "title": "How to use Asana App",
-      "url": "https://support.optisigns.com/hc/en-us/articles/1500002233221-How-to-use-Asana-App",
-      "updated_at": "2026-09-10T09:45:28Z",
-      "content_hash": "af5670e55c0eba965e642c2c098fb60e06b2e104687b229b849db3db3c2f18a9",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtouseasanaapp-gcwgex0zgmu7",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtouseasanaapp-gcwgex0zgmu7",
-      "chunk_count": 1
+      "slug": "how-to-use-the-asana-app",
+      "title": "How to Use the Asana App",
+      "url": "https://support.optisigns.com/hc/en-us/articles/1500002233221-How-to-Use-the-Asana-App",
+      "updated_at": "2026-10-13T16:34:14Z",
+      "content_hash": "ecdcf0a8cd3732b5ae451081adb840f359710a4041376c9978813e174154b1fa",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousetheasanaapp-28w6ak9trjqy",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousetheasanaapp-28w6ak9trjqy",
+      "chunk_count": 2
     },
     "1500002131621": {
       "slug": "how-to-use-youtube-live-with-optisigns",
@@ -3725,14 +3725,14 @@
       "chunk_count": 2
     },
     "360050244454": {
-      "slug": "how-to-use-trello-app",
-      "title": "How to use Trello App",
-      "url": "https://support.optisigns.com/hc/en-us/articles/360050244454-How-to-use-Trello-App",
-      "updated_at": "2026-09-10T09:43:03Z",
-      "content_hash": "9c46bf7343b3ae9c625162aacd558326e31746b3e600f9a3fb147ca4d74aef64",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousetrelloapp-d821cenq4tl0",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousetrelloapp-d821cenq4tl0",
-      "chunk_count": 1
+      "slug": "how-to-use-the-trello-app",
+      "title": "How to Use the Trello App",
+      "url": "https://support.optisigns.com/hc/en-us/articles/360050244454-How-to-Use-the-Trello-App",
+      "updated_at": "2026-10-13T21:49:36Z",
+      "content_hash": "3fa11497c09f6e4f28ae41dacc3954c36f0b9f0c2707646792d356accf6bf3b0",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethetrelloapp-6m97vpmc15lx",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethetrelloapp-6m97vpmc15lx",
+      "chunk_count": 2
     },
     "360049875794": {
       "slug": "how-to-use-follow-us-app",
@@ -3875,14 +3875,14 @@
       "chunk_count": 1
     },
     "360046859534": {
-      "slug": "how-to-use-twitch-app",
-      "title": "How to use Twitch App",
-      "url": "https://support.optisigns.com/hc/en-us/articles/360046859534-How-to-use-Twitch-App",
-      "updated_at": "2025-09-05T14:57:13Z",
-      "content_hash": "10d1d2ad430af958ba9d8a9b3031726bd19c42c355bffcef40b11c1314ee8442",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousetwitchapp-qsx3idgjdzl3",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousetwitchapp-qsx3idgjdzl3",
-      "chunk_count": 1
+      "slug": "how-to-use-the-twitch-app",
+      "title": "How to Use the Twitch App",
+      "url": "https://support.optisigns.com/hc/en-us/articles/360046859534-How-to-Use-the-Twitch-App",
+      "updated_at": "2026-10-13T17:00:14Z",
+      "content_hash": "9a074f30126173f333a07c5a0b4c0b891968859e9fa023f9aca690423eff3532",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethetwitchapp-unflceplbn7z",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethetwitchapp-unflceplbn7z",
+      "chunk_count": 2
     },
     "360044619014": {
       "slug": "how-to-use-the-facebook-counter-app",
@@ -4128,11 +4128,11 @@
       "slug": "how-to-display-vimeo-videos-with-optisigns",
       "title": "How to Display Vimeo Videos with OptiSigns",
       "url": "https://support.optisigns.com/hc/en-us/articles/360016254994-How-to-Display-Vimeo-Videos-with-OptiSigns",
-      "updated_at": "2026-10-12T20:49:41Z",
-      "content_hash": "9b0a1ca42a6a9fd6e08e8f33187d1b7591a2e0a99e4261e73f563eae885e2d87",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplayvimeovideoswith-rx0341yy4hf0",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplayvimeovideoswith-rx0341yy4hf0",
-      "chunk_count": 1
+      "updated_at": "2026-10-13T17:40:15Z",
+      "content_hash": "ff64dc718a0170e1e0d2693febc0de712d0f7c08e9b92d0ac1eae9c4121bf013",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplayvimeovideoswith-25ijtyk00e0l",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtodisplayvimeovideoswith-25ijtyk00e0l",
+      "chunk_count": 2
     },
     "360016382473": {
       "slug": "how-to-use-the-website-app-and-display-urls-on-optisigns",
