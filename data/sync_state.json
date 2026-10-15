@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_sync": "2026-10-14T07:38:03.483782+00:00",
+  "last_sync": "2026-10-15T07:26:29.028325+00:00",
   "vector_store_id": null,
   "assistant_id": null,
   "articles": {
@@ -238,10 +238,10 @@
       "slug": "chromeos-pwa-instructions",
       "title": "ChromeOS PWA Instructions",
       "url": "https://support.optisigns.com/hc/en-us/articles/49039295567891-ChromeOS-PWA-Instructions",
-      "updated_at": "2026-05-05T15:48:27Z",
-      "content_hash": "6a28d08b13dcdc8cd164d30ed85c48d605fa4a1803ad01454afc897e6983728f",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/chromeospwainstructions-82nx5ddnuoz1",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/chromeospwainstructions-82nx5ddnuoz1",
+      "updated_at": "2026-10-14T19:21:13Z",
+      "content_hash": "9973ed8a4daa1f0247bcc01183bf14553f488871353eecd83a484f560b063e55",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/chromeospwainstructions-xlolrphvyqxu",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/chromeospwainstructions-xlolrphvyqxu",
       "chunk_count": 3
     },
     "48751096814995": {
@@ -348,11 +348,11 @@
       "slug": "how-to-play-licensed-background-music-on-digital-signs-with",
       "title": "How to Play Licensed Background Music on Digital Signs with OptiSound",
       "url": "https://support.optisigns.com/hc/en-us/articles/40671590645651-How-to-Play-Licensed-Background-Music-on-Digital-Signs-with-OptiSound",
-      "updated_at": "2026-09-18T13:02:26Z",
-      "content_hash": "f337ac439a46e596da7b598165f152137ed6310c7bd3fc1102e56cdc0e0397fc",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoplaylicensedbackground-d7ggynh97cvj",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoplaylicensedbackground-d7ggynh97cvj",
-      "chunk_count": 2
+      "updated_at": "2026-10-14T21:03:18Z",
+      "content_hash": "e012944fc9860aa5c4f7a4c20a48e03c28f5ffb61782ec685054d97c70ec5a1b",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoplaylicensedbackground-qg5qm857niqj",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoplaylicensedbackground-qg5qm857niqj",
+      "chunk_count": 3
     },
     "360051014713": {
       "slug": "how-to-use-youtube-with-optisigns",
@@ -1828,10 +1828,10 @@
       "slug": "edit-screen-what-does-each-option-do",
       "title": "Edit Screen: What does each option do?",
       "url": "https://support.optisigns.com/hc/en-us/articles/360048914673-Edit-Screen-What-does-each-option-do",
-      "updated_at": "2026-09-10T09:42:40Z",
-      "content_hash": "664a2df83aa6e1a958139ad304fc44c8065bf5f5ee314e13064b399aa7305839",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/editscreenwhatdoeseachoptio-ez2pd6ycfpjr",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/editscreenwhatdoeseachoptio-ez2pd6ycfpjr",
+      "updated_at": "2026-10-14T18:02:17Z",
+      "content_hash": "e3ccb0f33cf49b819077705a5b080f3492887c10abf775260cf485c93574afe3",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/editscreenwhatdoeseachoptio-rci0va30bhaq",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/editscreenwhatdoeseachoptio-rci0va30bhaq",
       "chunk_count": 4
     },
     "360047275934": {
@@ -2198,11 +2198,11 @@
       "slug": "how-to-manage-and-edit-your-playlist-settings",
       "title": "How to Manage and Edit Your Playlist Settings",
       "url": "https://support.optisigns.com/hc/en-us/articles/28295074995859-How-to-Manage-and-Edit-Your-Playlist-Settings",
-      "updated_at": "2026-10-12T21:22:30Z",
-      "content_hash": "0d731469089f2416ce29aaae68a345d13f7d09841897f565bde89e063a37c472",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtomanageandedityourplayl-mlxtqq4elx2a",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtomanageandedityourplayl-mlxtqq4elx2a",
-      "chunk_count": 3
+      "updated_at": "2026-10-14T18:00:33Z",
+      "content_hash": "b470d962c703dec2fbf03c32d211a06f4bb03339137b7acd6f967f9b372615b9",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtomanageandedityourplayl-k27djy8jsqrc",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtomanageandedityourplayl-k27djy8jsqrc",
+      "chunk_count": 4
     },
     "28026588373139": {
       "slug": "how-to-fix-the-scaling-issue-on-optisigns-android-device-gen",
@@ -3615,14 +3615,14 @@
       "chunk_count": 1
     },
     "360060919453": {
-      "slug": "how-to-put-zendesk-dashboard-on-your-signs",
-      "title": "How to put ZenDesk Dashboard on your signs",
-      "url": "https://support.optisigns.com/hc/en-us/articles/360060919453-How-to-put-ZenDesk-Dashboard-on-your-signs",
-      "updated_at": "2026-09-10T09:45:01Z",
-      "content_hash": "03b0686b4c37c2cd26ad9b96ad8fed0fd444ff1af8a19117d488c3484114fc41",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoputzendeskdashboardony-ig7m39qc9ux4",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtoputzendeskdashboardony-ig7m39qc9ux4",
-      "chunk_count": 1
+      "slug": "how-to-use-the-zendesk-app",
+      "title": "How to Use the Zendesk App",
+      "url": "https://support.optisigns.com/hc/en-us/articles/360060919453-How-to-Use-the-Zendesk-App",
+      "updated_at": "2026-10-14T18:07:38Z",
+      "content_hash": "0f3c4c62df61024635356fe516d824cfdcde3dbd678669aa020698e0a04010c7",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethezendeskapp-01utrl0dz767",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethezendeskapp-01utrl0dz767",
+      "chunk_count": 2
     },
     "360058855273": {
       "slug": "how-to-use-google-docs-with-optisigns",
