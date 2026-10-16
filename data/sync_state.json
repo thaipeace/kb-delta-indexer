@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_sync": "2026-10-15T07:26:29.028325+00:00",
+  "last_sync": "2026-10-16T07:09:10.804068+00:00",
   "vector_store_id": null,
   "assistant_id": null,
   "articles": {
@@ -128,11 +128,11 @@
       "slug": "device-management-and-mass-provisioning",
       "title": "Device Management and Mass Provisioning",
       "url": "https://support.optisigns.com/hc/en-us/articles/53497007807251-Device-Management-and-Mass-Provisioning",
-      "updated_at": "2026-07-16T16:39:52Z",
-      "content_hash": "ba3635276fb75e89d97979433803ac1df34031b1e4d4c3f1607b647a96abaa56",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/devicemanagementandmassprov-i5q9d2dnxst8",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/devicemanagementandmassprov-i5q9d2dnxst8",
-      "chunk_count": 4
+      "updated_at": "2026-10-15T16:10:20Z",
+      "content_hash": "76d5a61d5ee28cff7a8266f014b9b9fde4c5fd15735c01719fd8866488afbeed",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/devicemanagementandmassprov-bgz551vrglqr",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/devicemanagementandmassprov-bgz551vrglqr",
+      "chunk_count": 5
     },
     "53293393593491": {
       "slug": "refer-earn-optisigns-referral-program",
@@ -3475,14 +3475,14 @@
       "chunk_count": 3
     },
     "4406180781203": {
-      "slug": "how-to-use-linkedin-app",
-      "title": "How to use LinkedIn App",
-      "url": "https://support.optisigns.com/hc/en-us/articles/4406180781203-How-to-use-LinkedIn-App",
-      "updated_at": "2025-09-04T18:05:53Z",
-      "content_hash": "d7fcccf3bb3b61c20e407a22f1cfac549080f540b01b29a3a130667f57fc1c2a",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtouselinkedinapp-gq38ryoxu11z",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtouselinkedinapp-gq38ryoxu11z",
-      "chunk_count": 2
+      "slug": "how-to-use-the-linkedin-app",
+      "title": "How to Use the LinkedIn App",
+      "url": "https://support.optisigns.com/hc/en-us/articles/4406180781203-How-to-Use-the-LinkedIn-App",
+      "updated_at": "2026-10-15T21:52:35Z",
+      "content_hash": "cd357763648af4f8c17f8093d96449e07b11eb689e53ee00605a5af4734a976d",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethelinkedinapp-p36o20yg5c82",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethelinkedinapp-p36o20yg5c82",
+      "chunk_count": 3
     },
     "4404053129619": {
       "slug": "how-to-use-the-microsoft-teams-meeting-app",
@@ -3496,13 +3496,13 @@
     },
     "4403267825171": {
       "slug": "how-to-use-the-social-mix-app",
-      "title": "How to use the Social Mix App",
-      "url": "https://support.optisigns.com/hc/en-us/articles/4403267825171-How-to-use-the-Social-Mix-App",
-      "updated_at": "2026-09-10T09:46:24Z",
-      "content_hash": "a46f8002e2b2263a0113e1adf615e7b18ed76b9ab2a9634278cb32315c48d400",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethesocialmixapp-f6jz2kdjv2ja",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethesocialmixapp-f6jz2kdjv2ja",
-      "chunk_count": 1
+      "title": "How to Use the Social Mix App",
+      "url": "https://support.optisigns.com/hc/en-us/articles/4403267825171-How-to-Use-the-Social-Mix-App",
+      "updated_at": "2026-10-15T21:07:28Z",
+      "content_hash": "fb6b0e761544205175d8c1eb672db9eed925ec89e62d0a6713b400021433879d",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethesocialmixapp-ak2wbt19f6cs",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethesocialmixapp-ak2wbt19f6cs",
+      "chunk_count": 2
     },
     "1500011611322": {
       "slug": "how-to-use-the-cbc-news-app",
@@ -3525,14 +3525,14 @@
       "chunk_count": 1
     },
     "1500009343862": {
-      "slug": "how-to-use-the-taggbox-display-app-with-optisigns",
-      "title": "How to use the Taggbox Display app with OptiSigns",
-      "url": "https://support.optisigns.com/hc/en-us/articles/1500009343862-How-to-use-the-Taggbox-Display-app-with-OptiSigns",
-      "updated_at": "2025-09-04T15:16:41Z",
-      "content_hash": "116841cb2bd8e7a7b1af43a86572295c63a3be7fac801f3f6c633bed3169dff5",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethetaggboxdisplayap-qns2erqjl756",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethetaggboxdisplayap-qns2erqjl756",
-      "chunk_count": 1
+      "slug": "how-to-use-the-taggbox-display-app",
+      "title": "How to Use the Taggbox Display App",
+      "url": "https://support.optisigns.com/hc/en-us/articles/1500009343862-How-to-Use-the-Taggbox-Display-App",
+      "updated_at": "2026-10-15T22:17:54Z",
+      "content_hash": "af37d3400cdf05901cdd18ccf7523a1181a271eee3cd5de035fea7478b064673",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethetaggboxdisplayap-sv1dfe0rnt1j",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethetaggboxdisplayap-sv1dfe0rnt1j",
+      "chunk_count": 2
     },
     "1500005889381": {
       "slug": "how-to-use-the-mindmeister-app",
@@ -3715,14 +3715,14 @@
       "chunk_count": 1
     },
     "360051495193": {
-      "slug": "how-to-use-instagram-business-app",
-      "title": "How to use Instagram Business App",
-      "url": "https://support.optisigns.com/hc/en-us/articles/360051495193-How-to-use-Instagram-Business-App",
-      "updated_at": "2026-09-10T09:43:33Z",
-      "content_hash": "15bddf7b9bdf6fde0e4974583546580cac928082dcf938fe43318da6fcc57293",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtouseinstagrambusinessap-v40kgq98jcwn",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtouseinstagrambusinessap-v40kgq98jcwn",
-      "chunk_count": 2
+      "slug": "how-to-use-the-instagram-business-app",
+      "title": "How to Use the Instagram Business App",
+      "url": "https://support.optisigns.com/hc/en-us/articles/360051495193-How-to-Use-the-Instagram-Business-App",
+      "updated_at": "2026-10-15T19:29:03Z",
+      "content_hash": "8a0beab9cd78417c07d4f7f5fcf5ca22f45cdc74cef7ceeb15073f2fd0e97315",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousetheinstagrambusines-2e7dqurinc83",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousetheinstagrambusines-2e7dqurinc83",
+      "chunk_count": 3
     },
     "360050244454": {
       "slug": "how-to-use-the-trello-app",
@@ -3735,14 +3735,14 @@
       "chunk_count": 2
     },
     "360049875794": {
-      "slug": "how-to-use-follow-us-app",
-      "title": "How to use Follow Us App",
-      "url": "https://support.optisigns.com/hc/en-us/articles/360049875794-How-to-use-Follow-Us-App",
-      "updated_at": "2026-09-10T09:42:59Z",
-      "content_hash": "d24e43a51a3c0c4adbfb17878a547bdd45c45961b6d082fc53d35439d61fcea7",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousefollowusapp-uogqxzwrxzaf",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousefollowusapp-uogqxzwrxzaf",
-      "chunk_count": 1
+      "slug": "how-to-use-the-follow-us-app",
+      "title": "How to Use the Follow Us App",
+      "url": "https://support.optisigns.com/hc/en-us/articles/360049875794-How-to-Use-the-Follow-Us-App",
+      "updated_at": "2026-10-15T21:48:40Z",
+      "content_hash": "37c5b5aa5a0e416a2b5c82127d2021cdc41400f569cd6f6bb5fe5b3863d02391",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethefollowusapp-4oqj2otulawm",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethefollowusapp-4oqj2otulawm",
+      "chunk_count": 2
     },
     "360049872414": {
       "slug": "how-to-use-facebook-video-app",
@@ -3958,20 +3958,20 @@
       "slug": "how-to-use-the-countup-app",
       "title": "How to Use the CountUp App",
       "url": "https://support.optisigns.com/hc/en-us/articles/360041222994-How-to-Use-the-CountUp-App",
-      "updated_at": "2026-10-01T17:24:51Z",
-      "content_hash": "7ae43280e5ce998d895e706564e654b074aac5381cb0b08a51b0dd76726722b2",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethecountupapp-kuwgu9ymbn6y",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethecountupapp-kuwgu9ymbn6y",
+      "updated_at": "2026-10-15T16:20:51Z",
+      "content_hash": "4a4a5e972a916322e2993e0abfc3422562f70b77e0b0568731fc011f61e46de6",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethecountupapp-glwrumhsar2k",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethecountupapp-glwrumhsar2k",
       "chunk_count": 2
     },
     "360041638433": {
       "slug": "how-to-use-the-countdown-app",
-      "title": "How to use the CountDown App",
-      "url": "https://support.optisigns.com/hc/en-us/articles/360041638433-How-to-use-the-CountDown-App",
-      "updated_at": "2026-09-11T04:37:51Z",
-      "content_hash": "40d097b7fb477be7cdd190599436e407367a0b9fe4ad52ead5d0b9028073f621",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethecountdownapp-07bjbvpbdil1",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethecountdownapp-07bjbvpbdil1",
+      "title": "How to Use the CountDown App",
+      "url": "https://support.optisigns.com/hc/en-us/articles/360041638433-How-to-Use-the-CountDown-App",
+      "updated_at": "2026-10-15T18:24:17Z",
+      "content_hash": "34220389c3b78753967f0e6306bd2da311907bfe9f735ba5a57335cc5ceeaf7e",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethecountdownapp-lm4aj9xi22hr",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethecountdownapp-lm4aj9xi22hr",
       "chunk_count": 2
     },
     "360041481553": {
