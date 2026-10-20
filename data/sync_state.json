@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_sync": "2026-10-19T07:45:42.449312+00:00",
+  "last_sync": "2026-10-20T07:32:34.510238+00:00",
   "vector_store_id": null,
   "assistant_id": null,
   "articles": {
@@ -1548,10 +1548,10 @@
       "slug": "advanced-enforce-sso-login-for-your-account",
       "title": "Advanced: Enforce SSO login for your account",
       "url": "https://support.optisigns.com/hc/en-us/articles/360061576673-Advanced-Enforce-SSO-login-for-your-account",
-      "updated_at": "2026-09-28T21:53:26Z",
-      "content_hash": "d38959e5696121c0543c7a7481e50ee4543911750c1cb6014cf20426b11b3073",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/advancedenforcessologinfory-frm4l0l7bwr2",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/advancedenforcessologinfory-frm4l0l7bwr2",
+      "updated_at": "2026-10-19T18:53:23Z",
+      "content_hash": "5403abe054f9d8b2ee08ef32ff7752a3b673b11a3058b836f2a41dc2df84bfbb",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/advancedenforcessologinfory-hfmx86pn6vqv",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/advancedenforcessologinfory-hfmx86pn6vqv",
       "chunk_count": 1
     },
     "1500000941981": {
@@ -1978,10 +1978,10 @@
       "slug": "video-codec-or-video-playback-issues",
       "title": "Video codec or video playback issues",
       "url": "https://support.optisigns.com/hc/en-us/articles/360038992973-Video-codec-or-video-playback-issues",
-      "updated_at": "2026-09-10T09:41:25Z",
-      "content_hash": "8e89912a8474e85e338ee70be232d278bfed6905217677b4ba72612af86fc4ec",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/videocodecorvideoplaybackis-az1b7ximb1zn",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/videocodecorvideoplaybackis-az1b7ximb1zn",
+      "updated_at": "2026-10-19T13:04:32Z",
+      "content_hash": "f41811907dcba452dcc162218133716279a6294f6c15830a6c0a23472b7935bb",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/videocodecorvideoplaybackis-uwksdl1knamg",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/videocodecorvideoplaybackis-uwksdl1knamg",
       "chunk_count": 1
     },
     "360037416494": {
@@ -2555,14 +2555,14 @@
       "chunk_count": 1
     },
     "4403015887763": {
-      "slug": "moderate-your-social-media-feeds",
-      "title": "Moderate your social media feeds",
-      "url": "https://support.optisigns.com/hc/en-us/articles/4403015887763-Moderate-your-social-media-feeds",
-      "updated_at": "2026-09-10T09:46:22Z",
-      "content_hash": "5476b373483ec5f0e080bf66e8c23010fc2b227afff45c8b3926ccaa1e5911aa",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/moderateyoursocialmediafeed-y9m5pf462je0",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/moderateyoursocialmediafeed-y9m5pf462je0",
-      "chunk_count": 1
+      "slug": "how-to-moderate-your-social-media-feeds",
+      "title": "How to Moderate Your Social Media Feeds",
+      "url": "https://support.optisigns.com/hc/en-us/articles/4403015887763-How-to-Moderate-Your-Social-Media-Feeds",
+      "updated_at": "2026-10-19T20:31:54Z",
+      "content_hash": "31bbf4c0a6948e9c9f979b4a6914159d3cdab332f9d664fa4b2e5a9ce4238f5e",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtomoderateyoursocialmedi-u6niyarza1mm",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtomoderateyoursocialmedi-u6niyarza1mm",
+      "chunk_count": 2
     },
     "1500004699122": {
       "slug": "android-tv-chromecast",
@@ -3785,14 +3785,14 @@
       "chunk_count": 1
     },
     "360049159814": {
-      "slug": "how-to-use-walls-io-app",
-      "title": "How to use Walls.io App",
-      "url": "https://support.optisigns.com/hc/en-us/articles/360049159814-How-to-use-Walls-io-App",
-      "updated_at": "2026-09-10T09:42:53Z",
-      "content_hash": "765befc21648af6cd2bc77cdc4a1f9ea8e3fb0947cf0eb4ed1683386fd05db6b",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousewallsioapp-aivgfbiczpuv",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousewallsioapp-aivgfbiczpuv",
-      "chunk_count": 1
+      "slug": "how-to-use-the-walls-io-app",
+      "title": "How to Use the Walls.io App",
+      "url": "https://support.optisigns.com/hc/en-us/articles/360049159814-How-to-Use-the-Walls-io-App",
+      "updated_at": "2026-10-19T20:14:32Z",
+      "content_hash": "b8d4b3ec0b59e255e704017617382dba49522b2e2d4d0e265f142870943d601a",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethewallsioapp-xre23yfyu7qv",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethewallsioapp-xre23yfyu7qv",
+      "chunk_count": 2
     },
     "360049156234": {
       "slug": "how-to-use-the-currency-exchange-app",
