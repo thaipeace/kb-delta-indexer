@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_sync": "2026-10-21T07:38:36.125306+00:00",
+  "last_sync": "2026-10-22T07:34:35.320148+00:00",
   "vector_store_id": null,
   "assistant_id": null,
   "articles": {
@@ -1078,10 +1078,10 @@
       "slug": "cannot-find-the-optisigns-app-on-your-samsung-smart-tv",
       "title": "Cannot find the OptiSigns app on Your Samsung Smart TV",
       "url": "https://support.optisigns.com/hc/en-us/articles/15268811715347-Cannot-find-the-OptiSigns-app-on-Your-Samsung-Smart-TV",
-      "updated_at": "2026-09-10T09:49:21Z",
-      "content_hash": "86a2ed2adf086a8ab6bef2984dedfc773a0b000547a06d4cb502b6248ff19e63",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/cannotfindtheoptisignsappon-wdxzijsv8v3p",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/cannotfindtheoptisignsappon-wdxzijsv8v3p",
+      "updated_at": "2026-10-21T09:26:59Z",
+      "content_hash": "980882145988249805fbb6e8eb1bbf91830444b0304b62bcb88d510fd7cac2cf",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/cannotfindtheoptisignsappon-58lm5lbaej0g",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/cannotfindtheoptisignsappon-58lm5lbaej0g",
       "chunk_count": 1
     },
     "13320135306515": {
