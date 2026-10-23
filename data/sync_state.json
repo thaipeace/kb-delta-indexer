@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_sync": "2026-10-22T07:34:35.320148+00:00",
+  "last_sync": "2026-10-23T07:31:18.715712+00:00",
   "vector_store_id": null,
   "assistant_id": null,
   "articles": {
@@ -278,10 +278,10 @@
       "slug": "operational-schedule-troubleshooting",
       "title": "Operational Schedule Troubleshooting",
       "url": "https://support.optisigns.com/hc/en-us/articles/48241081473043-Operational-Schedule-Troubleshooting",
-      "updated_at": "2026-04-20T21:26:17Z",
-      "content_hash": "5db625d40269225f00e36cda7f73f55d00fe5af4506d2cded73914946139ae3d",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/operationalscheduletroubles-vqj519lwvda1",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/operationalscheduletroubles-vqj519lwvda1",
+      "updated_at": "2026-10-22T23:47:31Z",
+      "content_hash": "f55864e08f3ecb5c674c64be8d17c62db83dbdd145568d4578137a43a9ed4f95",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/operationalscheduletroubles-kj9knwjx8foe",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/operationalscheduletroubles-kj9knwjx8foe",
       "chunk_count": 3
     },
     "45619214182803": {
@@ -3058,10 +3058,10 @@
       "slug": "error-handling",
       "title": "Error Handling",
       "url": "https://support.optisigns.com/hc/en-us/articles/4414564078995-Error-Handling",
-      "updated_at": "2025-09-11T14:10:24Z",
-      "content_hash": "df7c79c53067339b9b9c875db325e585ab49611010ca482d526fcf8d0461b229",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/errorhandling-ibvylbqkbr5q",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/errorhandling-ibvylbqkbr5q",
+      "updated_at": "2026-10-22T10:22:18Z",
+      "content_hash": "540fa9c55cc61b4c2b1e50eb908baf46b5fab356c1f7009b16212e39462728c3",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/errorhandling-u7tfmsoj4fgy",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/errorhandling-u7tfmsoj4fgy",
       "chunk_count": 1
     },
     "360016484393": {
