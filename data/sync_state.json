@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_sync": "2026-10-23T07:31:18.715712+00:00",
+  "last_sync": "2026-10-24T07:17:28.019466+00:00",
   "vector_store_id": null,
   "assistant_id": null,
   "articles": {
@@ -758,10 +758,10 @@
       "slug": "how-to-lockdown-ipad-single-app-with-guided-accessibility",
       "title": "How to Lockdown iPad/Single App with Guided Accessibility",
       "url": "https://support.optisigns.com/hc/en-us/articles/25273043501587-How-to-Lockdown-iPad-Single-App-with-Guided-Accessibility",
-      "updated_at": "2026-09-10T09:50:40Z",
-      "content_hash": "41c0c6517dd2f8846d0fd93e82e6b5a3572cc368c3ed1ec8b90a8d24b8972451",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtolockdownipadsingleappw-iowylh33stul",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtolockdownipadsingleappw-iowylh33stul",
+      "updated_at": "2026-10-23T15:32:18Z",
+      "content_hash": "69e98d1d822f42e674e8640df40c5a9921c512552574e88c826c5cf9b840e450",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtolockdownipadsingleappw-jdt64xnv4r8w",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtolockdownipadsingleappw-jdt64xnv4r8w",
       "chunk_count": 1
     },
     "25127398699667": {
