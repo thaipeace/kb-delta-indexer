@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_sync": "2026-10-24T07:17:28.019466+00:00",
+  "last_sync": "2026-10-25T07:35:23.215161+00:00",
   "vector_store_id": null,
   "assistant_id": null,
   "articles": {
@@ -2778,10 +2778,10 @@
       "slug": "amazon-signage-stick",
       "title": "Amazon Signage Stick",
       "url": "https://support.optisigns.com/hc/en-us/articles/34087061669523-Amazon-Signage-Stick",
-      "updated_at": "2026-09-09T07:45:55Z",
-      "content_hash": "4d1e613c862aab44357cc74049a3622d79f5adac5e86e75db5e73f7cece5c9be",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/amazonsignagestick-380ywsmzy495",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/amazonsignagestick-380ywsmzy495",
+      "updated_at": "2026-10-25T02:01:21Z",
+      "content_hash": "ea363cb4e5376c040ddd149956989f76f0725f9ae12cb0162761e791be976207",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/amazonsignagestick-wbklqxhm0sen",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/amazonsignagestick-wbklqxhm0sen",
       "chunk_count": 2
     },
     "14502723487379": {
