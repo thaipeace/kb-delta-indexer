@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_sync": "2026-10-25T07:35:23.215161+00:00",
+  "last_sync": "2026-10-26T07:47:53.468269+00:00",
   "vector_store_id": null,
   "assistant_id": null,
   "articles": {
@@ -2998,10 +2998,10 @@
       "slug": "about-the-onhold-devices-folder",
       "title": "About the OnHold Devices Folder",
       "url": "https://support.optisigns.com/hc/en-us/articles/1500003244381-About-the-OnHold-Devices-Folder",
-      "updated_at": "2026-09-07T11:26:40Z",
-      "content_hash": "41cc27df83bf1e381ebb579075223919cfa1466c2655ff7b5010afa4ba1b3994",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/abouttheonholddevicesfolder-5s3dwbfnf7j6",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/abouttheonholddevicesfolder-5s3dwbfnf7j6",
+      "updated_at": "2026-10-25T15:48:03Z",
+      "content_hash": "716e0fbb3bdb4a78683eb325e4eb3df4f6d601dabbc0dbd691c8ebb41edc1525",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/abouttheonholddevicesfolder-r4s0n48anvjh",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/abouttheonholddevicesfolder-r4s0n48anvjh",
       "chunk_count": 2
     },
     "360016981853": {
