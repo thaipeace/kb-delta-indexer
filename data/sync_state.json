@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_sync": "2026-10-26T07:47:53.468269+00:00",
+  "last_sync": "2026-10-27T07:51:24.046409+00:00",
   "vector_store_id": null,
   "assistant_id": null,
   "articles": {
@@ -358,10 +358,10 @@
       "slug": "how-to-use-youtube-with-optisigns",
       "title": "How to Use YouTube with OptiSigns",
       "url": "https://support.optisigns.com/hc/en-us/articles/360051014713-How-to-Use-YouTube-with-OptiSigns",
-      "updated_at": "2026-09-24T14:52:18Z",
-      "content_hash": "3139467ff9fd8534421ef35c9c6e2621cd7115a7c70c8a6c4485170f0bcb0f64",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtouseyoutubewithoptisign-s2y59ozs2l1n",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtouseyoutubewithoptisign-s2y59ozs2l1n",
+      "updated_at": "2026-10-26T13:22:13Z",
+      "content_hash": "46fa651e774fec6d1053014966af303a2f35ee6039e04c02ab3c716540d1fda7",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtouseyoutubewithoptisign-1gngum797kva",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtouseyoutubewithoptisign-1gngum797kva",
       "chunk_count": 2
     },
     "40212027797523": {
@@ -678,10 +678,10 @@
       "slug": "how-to-create-use-playlists",
       "title": "How to Create & Use Playlists",
       "url": "https://support.optisigns.com/hc/en-us/articles/28295104605843-How-to-Create-Use-Playlists",
-      "updated_at": "2026-10-12T21:22:16Z",
-      "content_hash": "c016db50c4a5912692ea2345f54dfcf35ac99c6feebe71b89e232d42e1b4ec06",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocreateuseplaylists-exrfii05fzv4",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocreateuseplaylists-exrfii05fzv4",
+      "updated_at": "2026-10-26T08:57:11Z",
+      "content_hash": "a38fb6cdc60463f7f2689b93ec940a73ba1a5317ff079c31cfc7c60590a4b153",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocreateuseplaylists-edxaopure8rs",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocreateuseplaylists-edxaopure8rs",
       "chunk_count": 2
     },
     "28140190892307": {
@@ -698,10 +698,10 @@
       "slug": "how-to-change-engage-kiosk-style-preferences",
       "title": "How to Change Engage/Kiosk Style Preferences",
       "url": "https://support.optisigns.com/hc/en-us/articles/28115946505107-How-to-Change-Engage-Kiosk-Style-Preferences",
-      "updated_at": "2026-09-10T21:01:31Z",
-      "content_hash": "bc418358efc03f7b5d9ed409a6c38f376ad5e33e0115492e35f8938023d75eae",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtochangeengagekioskstyle-qv7bfhleknup",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtochangeengagekioskstyle-qv7bfhleknup",
+      "updated_at": "2026-10-26T20:29:11Z",
+      "content_hash": "92f0283f538034818440e3a8508ed7438c1936b962bc080032b8c23a1e174885",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtochangeengagekioskstyle-8l5io3je9k41",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtochangeengagekioskstyle-8l5io3je9k41",
       "chunk_count": 1
     },
     "27690296225555": {
@@ -1088,10 +1088,10 @@
       "slug": "build-integrations-using-the-optisigns-enterprise-app",
       "title": "Build Integrations Using the OptiSigns Enterprise App",
       "url": "https://support.optisigns.com/hc/en-us/articles/13320135306515-Build-Integrations-Using-the-OptiSigns-Enterprise-App",
-      "updated_at": "2026-09-14T15:53:06Z",
-      "content_hash": "4b6d0c268e78c0acaee13221b86f04637eafad7a4b79758f0e3666e4d5ff5965",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/buildintegrationsusingtheop-ghrq3heb6mel",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/buildintegrationsusingtheop-ghrq3heb6mel",
+      "updated_at": "2026-10-26T08:22:44Z",
+      "content_hash": "8cc2d89ae2101278387e54b54e733fad2426e3dd1d24dbb688f34d33cf50056c",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/buildintegrationsusingtheop-zf9gpjlzcv96",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/buildintegrationsusingtheop-zf9gpjlzcv96",
       "chunk_count": 3
     },
     "13097501958291": {
@@ -2078,10 +2078,10 @@
       "slug": "how-to-create-and-use-the-split-screen-app",
       "title": "How to Create and Use the Split Screen App",
       "url": "https://support.optisigns.com/hc/en-us/articles/360026559573-How-to-Create-and-Use-the-Split-Screen-App",
-      "updated_at": "2026-08-19T14:57:06Z",
-      "content_hash": "b2962ce344dd725a80a899170f85d8d6b980f4ab3528c96c6f5dd43e43ba450c",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocreateandusethesplitsc-q4na34umnzvr",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocreateandusethesplitsc-q4na34umnzvr",
+      "updated_at": "2026-10-26T09:02:54Z",
+      "content_hash": "761d12dd74da2223d75327e6538ef894cc5ab9dfb3d0a30ec3a939fd22a69a60",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocreateandusethesplitsc-sq0lczlmvb71",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtocreateandusethesplitsc-sq0lczlmvb71",
       "chunk_count": 3
     },
     "360025661053": {
@@ -2468,10 +2468,10 @@
       "slug": "how-to-use-the-instagram-app",
       "title": "How to Use the Instagram App",
       "url": "https://support.optisigns.com/hc/en-us/articles/360016388733-How-to-Use-the-Instagram-App",
-      "updated_at": "2026-10-16T21:51:44Z",
-      "content_hash": "4419696a96201b008329ff5ccb1b2be65b0f862a23cdc36cd5aecf9be5aaf7bc",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousetheinstagramapp-pcauzshl1k91",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousetheinstagramapp-pcauzshl1k91",
+      "updated_at": "2026-10-26T09:15:39Z",
+      "content_hash": "6291e0be3eba9d601f68b48fd94c7de7482b285c1e1448542641e94acda70da5",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousetheinstagramapp-ch0kp7kndptg",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousetheinstagramapp-ch0kp7kndptg",
       "chunk_count": 3
     },
     "360016219114": {
@@ -2608,10 +2608,10 @@
       "slug": "how-to-use-weather-apps-in-optisigns",
       "title": "How to Use Weather Apps in OptiSigns",
       "url": "https://support.optisigns.com/hc/en-us/articles/360017964153-How-to-Use-Weather-Apps-in-OptiSigns",
-      "updated_at": "2026-09-29T19:54:35Z",
-      "content_hash": "46f27940819374e0bc5a446e1e5570b7ee1d39a6a43b4c4bfc086d6cfe5b935b",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtouseweatherappsinoptisi-mq03u3wcmzhp",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtouseweatherappsinoptisi-mq03u3wcmzhp",
+      "updated_at": "2026-10-26T09:07:46Z",
+      "content_hash": "1d6e217e2f1d27d3c8005afce540dc3acdba4663a15e48d07d84d22b3f7c0707",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtouseweatherappsinoptisi-u0f158j3rxas",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtouseweatherappsinoptisi-u0f158j3rxas",
       "chunk_count": 4
     },
     "360016375153": {
@@ -3078,10 +3078,10 @@
       "slug": "can-i-have-my-invoices-receipts-sent-to-a-different-email",
       "title": "Can I have my invoices, receipts sent to a different email address?",
       "url": "https://support.optisigns.com/hc/en-us/articles/360016375793-Can-I-have-my-invoices-receipts-sent-to-a-different-email-address",
-      "updated_at": "2026-09-10T09:39:51Z",
-      "content_hash": "bc4b39a37c45c818e0edbbd94d3f8caae9e3d406701ab081c55fad9edfda5c4e",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/canihavemyinvoicesreceiptss-zzjj75ft43ll",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/canihavemyinvoicesreceiptss-zzjj75ft43ll",
+      "updated_at": "2026-10-26T15:43:28Z",
+      "content_hash": "2a0e4f8e045fe59f0d9c48a27b68498a0d080a648d75b5c0f29bfc6bd6c32ea8",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/canihavemyinvoicesreceiptss-bueaf6b5i4qw",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/canihavemyinvoicesreceiptss-bueaf6b5i4qw",
       "chunk_count": 1
     },
     "36558469962643": {
@@ -3828,10 +3828,10 @@
       "slug": "how-to-use-the-google-drive-app",
       "title": "How to Use the Google Drive App",
       "url": "https://support.optisigns.com/hc/en-us/articles/360049518313-How-to-Use-the-Google-Drive-App",
-      "updated_at": "2026-10-16T16:33:18Z",
-      "content_hash": "7397f34aded9792819d9bf0d8495e21c1dc99714e771277d08d99853ef5f5687",
-      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethegoogledriveapp-gt7t7w3wjxn2",
-      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethegoogledriveapp-gt7t7w3wjxn2",
+      "updated_at": "2026-10-26T09:22:47Z",
+      "content_hash": "1368e6a00efd3d848fb8b280fedf438866ab69bfded12fc7adfd3b0b946108e4",
+      "remote_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethegoogledriveapp-yy0bmxxwe8mb",
+      "openai_file_id": "fileSearchStores/kbdeltaindexerstore-1uwdmskg5apl/documents/howtousethegoogledriveapp-yy0bmxxwe8mb",
       "chunk_count": 3
     },
     "360049030453": {
